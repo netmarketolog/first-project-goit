@@ -1,5 +1,9 @@
 @import './common';
-@import './components/hero-header';
+@import './base/base';
+@import './base/button';
+@import './utils/variables';
+@import './components/header';
+@import './components/hero';
 @import './components/products';
 @import './components/about';
 @import './components/advantages';
