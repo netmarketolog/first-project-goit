@@ -51,82 +51,15 @@ button {
   overflow: hidden;
 }
 
-.btn {
-  display: flex;
-  font-family: "DM Sans";
-  font-style: normal;
-  align-items: center;
-  text-align: center;
-  border: none;
-  justify-content: center;
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-.btn--red {
-  background-color: #D41443;
-  color: #FFFFFF;
-}
-.btn--white {
-  background-color: #FFFFFF;
-  color: #D41443;
-}
-.btn--red:hover {
-  background-color: #C7133E;
-}
-.btn--white:hover {
-  background-color: #ECEBEB;
-}
-
-.btn__menu {
-  width: 20px;
-  height: 12px;
-}
-
-.btn__header {
-  display: none;
-}
-
-.btn__hero {
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 1.25;
-  border-radius: 20px;
-}
-.btn__hero--widht-red {
-  width: 62.4px;
-  height: 24px;
-}
-.btn__hero--widht-white {
-  width: 82.8px;
-  height: 24px;
-}
-
-.btn__about {
-  width: 176px;
-  height: 44px;
-  border-radius: 22px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.28;
-}
-
-.btn__contacts {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
-  border-radius: 22px;
-}
-.btn__contacts--widht-red {
-  width: 161.45px;
-  height: 44px;
-}
-.btn__contacts--widht-white {
-  width: 161px;
-  height: 44px;
-}
-
-.btn__modal {
-  width: 209px;
-  height: 44px;
-  border-radius: 22px;
+@media screen and (min-width: 1280px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .container {
@@ -142,15 +75,11 @@ button {
 @media (min-width: 768px) {
   .container {
     width: 768px;
-    padding-left: 18px;
-    padding-right: 18px;
   }
 }
 @media (min-width: 1280px) {
   .container {
     width: 1280px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
 }
 :root {
@@ -191,46 +120,8 @@ button {
   --font-size-small: 8px;
 }
 
-.adv__section {
-  background-color: #fff5f6;
-  padding-top: 40px;
-  padding-bottom: 90px;
-  padding-left: 17px;
-  max-width: 768px;
-}
-
-.advantages__item {
-  max-width: 230px;
-}
-
-.advantages__item:not(:last-child) {
-  margin-bottom: 32px;
-}
-.advantages__item:not(:last-child)::after {
-  content: "";
-}
-
-.advantages__text {
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.67;
-  color: #000000;
-}
-.advantages__text::before {
-  content: "";
-}
-
-.advantages__style {
-  font-family: "Titan One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1.14;
-  letter-spacing: 0.04em;
-  color: #d41443;
-  padding-bottom: 21px;
+.gallery__img {
+  width: 100%;
 }
 
 .contacts {
