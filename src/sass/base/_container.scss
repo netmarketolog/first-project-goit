@@ -12,11 +12,15 @@
 @media (min-width: 768px) {
     .container {
         width: 768px;
+        padding-left: 18px;
+        padding-right: 18px;
     }
 }
 
 @media (min-width: 1280px) {
     .container {
         width: 1280px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
