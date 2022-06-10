@@ -1,10 +1,43 @@
-// :root
-// $font-title:;
-// $font-desc:;
-// $font-small:;
-// $mobile: 320px;
-// $max-mob: 767px;
-// $tablet: 768px;
-// $max-tab: 1279px;
-// $desktop: 1280px;
-    &font-size: 15px;
+:root
+$font-title:;
+$font-desc:;
+
+$mobile: 320px;
+$max-mob: 767px;
+$tablet: 768px;
+$max-tab: 1279px;
+$desktop: 1280px;
+
+// colors:
+$primary-bg: #FFFFFF;
+$secondary-bg: #FFF5F6;
+$hero-bg-primary: #FFB8CA;
+$circle-bg: #FFA5BA;
+$section-title-color: #D41443;
+$btn-hover-color-accent: #C7133E;
+$btn-hover-color: #ECEBEB;
+$btn-footer-accent: #D41342;
+$footer-social: #FEA5BB;
+$primary-text-color: #907E82;
+$secondary-text-color: #000000;
+$mobile-menu-color: #E17992;
+$coments-bg-color: #E1E1E1;
+$products-coffee-col: #F0D1A5;
+$products-shakes-col: #C2E297;
+$comments-point-color: #C7133E;
+$comments-home-color: #D31342;
+// fonts
+$font-title: 'Titan One';
+$primery-font: 'DM Sans';
+// font-size
+$primary-font-size: 16px;
+$primary-font-size-mob: 12px;
+$secondary-font-size: 14px;
+$font-size-title-mob: 34px;
+$font-size-title-tab: 48px;
+$font-size-title-desk: 58px;
+$font-size-label-mob: 18px;
+$font-size-label-tab: 26px;
+$font-size-label-desk: 30px ;
+$font-size-product-label-small: 20px;
+$font-size-small: 8px;
