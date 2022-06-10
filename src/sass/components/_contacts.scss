@@ -67,5 +67,26 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   gap: 10px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 17px;
+  @include fonts(700, 16px, 1.3, null);
+  border-radius: 22px;
+  border: none;
+}
+
+.contacts__button--locations {
+  color: #ffffff;
+  background: #d41342;
+}
+
+.contacts__button--franchise {
+  color: #d41443;
+  background: #ffffff;
 }
