@@ -24,7 +24,7 @@
   display: inline-block;
   padding: 2px 24px;
   margin-bottom: 20px;
-  @include fonts(500, 12px, 1.83, 0, 04em);
+  @include fonts(500, 12px, 1.83, 0.04em);
   color: #ffffff;
   background-color: #f0d1a5;
   border-radius: 4px;
@@ -35,7 +35,7 @@
 
 .contacts__city {
   margin-bottom: 8px;
-  @include fonts(500, 12px, 1.83, 0, 04em);
+  @include fonts(500, 12px, 1.83, 0.04em);
   color: #000000;
 }
 
@@ -50,7 +50,7 @@
   margin: 24px 0;
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
-  @include fonts(500, 12px, 1.83);
+  @include fonts(500, 12px, 1.83, null);
   .work__days {
     color: #000000;
   }
