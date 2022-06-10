@@ -1,9 +1,11 @@
 .btn {
+    display: flex;
     font-family: 'DM Sans';
     font-style: normal;
-    display: flex;
     align-items: center;
     text-align: center;
+    border: none;
+    justify-content: center;
     // background-color: transparent;
     // transition: color 300ms linear, background-color 300ms;
 
@@ -19,10 +21,108 @@
 
         &--red:hover {
              background-color: #C7133E;
-         }
+        }
 
         &--white:hover {
              background-color: #ECEBEB;
         }
        
+}
+
+.btn_menu {
+    width: 20px;
+    height: 12px;
+
+    // @media screen and (min-width: 768px ) {
+    // }
+
+    // @media screen and (min-width: 1280px ) {
+    // }
+}
+
+.btn_header {
+    display: none;
+   
+    // @media screen and (min-width: 768px ) {
+        // }
+    
+        // @media screen and (min-width: 1280px ) {
+        // }
+}
+
+.btn_hero {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    border-radius: 20px;
+
+    &--red {
+        width: 62.4px;
+        height: 24px;
+    }
+    
+    &--white {
+        width: 82.8px;
+        height: 24px;
+    }
+
+          // @media screen and (min-width: 768px ) {
+          // }
+    
+          // @media screen and (min-width: 1280px ) {
+          // }
+}
+
+.btn_about {
+    width: 176px;
+    height: 44px;
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+    // margin-top: 20px;
+    // margin-bottom: 40px;
+   
+
+    // @media screen and (min-width: 768px ) {
+        // }
+    
+        // @media screen and (min-width: 1280px ) {
+        // }
+}
+
+.btn_contacts {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    border-radius: 22px;
+
+    &--red {
+        width: 161.45px;
+        height: 44px;
+    }
+    
+    &--white {
+        width: 161px;
+        height: 44px;
+    }
+    // @media screen and (min-width: 768px ) {
+        // }
+    
+        // @media screen and (min-width: 1280px ) {
+        // }
+}
+
+
+.btn_modal {
+    width: 209px;
+    height: 44px;
+    border-radius: 22px;
+    // margin-top: 26px;
+
+// @media screen and (min-width: 768px ) {
+    // }
+
+    // @media screen and (min-width: 1280px ) {
+    // }
 }
