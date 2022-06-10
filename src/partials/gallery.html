@@ -1,0 +1,37 @@
+<section class="section">
+  <div class="container">
+    <h2 class="visually-hidden">gallery</h2>
+    <picture>
+      <source
+        srcset="
+          ./images/desktop/img-gallery-d.jpg    1x,
+          ./images/desktop/img-gallery-d@2x.jpg 2x
+        "
+        media="(min-width: 1280px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="
+          ./images/tablet/img-gallery-t.jpg    1x,
+          ./images/tablet/img-gallery-t@2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="
+          ./images/mobile/img-gallery-m.jpg    1x,
+          ./images/mobile/img-gallery-m@2x.jpg 2x
+        "
+        media="(max-width: 767px)"
+        type="image/jpeg"
+      />
+
+      <img
+        src="./images/mobile/img-gallery-m.jpg"
+        alt="Gallery"
+        class="team__img"
+      />
+    </picture>
+  </div>
+</section>
