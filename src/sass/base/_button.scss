@@ -8,72 +8,59 @@
     justify-content: center;
     // background-color: transparent;
     // transition: color 300ms linear, background-color 300ms;
-
     &--red {
         background-color: #D41443;
         color: #FFFFFF;
     }
-
     &--white {
         background-color: #FFFFFF;
         color: #D41443;
     }
-
     &--red:hover {
         background-color: #C7133E;
     }
-
     &--white:hover {
         background-color: #ECEBEB;
     }
-
 }
 
-.btn_menu {
+.btn__menu {
     width: 20px;
     height: 12px;
-
     // @media screen and (min-width: 768px ) {
     // }
-
     // @media screen and (min-width: 1280px ) {
     // }
 }
 
-.btn_header {
+.btn__header {
     display: none;
-
     // @media screen and (min-width: 768px ) {
     // }
-
     // @media screen and (min-width: 1280px ) {
     // }
 }
 
-.btn_hero {
+.btn__hero {
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
     border-radius: 20px;
-
     &--widht-red {
         width: 62.4px;
         height: 24px;
     }
-
     &--widht-white {
         width: 82.8px;
         height: 24px;
     }
-
     // @media screen and (min-width: 768px ) {
     // }
-
     // @media screen and (min-width: 1280px ) {
     // }
 }
 
-.btn_about {
+.btn__about {
     width: 176px;
     height: 44px;
     border-radius: 22px;
@@ -82,48 +69,38 @@
     line-height: 1.28;
     // margin-top: 20px;
     // margin-bottom: 40px;
-
-
     // @media screen and (min-width: 768px ) {
     // }
-
     // @media screen and (min-width: 1280px ) {
     // }
 }
 
-.btn_contacts {
+.btn__contacts {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
     border-radius: 22px;
-
     &--widht-red {
         width: 161.45px;
         height: 44px;
     }
-
     &--widht-white {
         width: 161px;
         height: 44px;
     }
-
     // @media screen and (min-width: 768px ) {
     // }
-
     // @media screen and (min-width: 1280px ) {
     // }
 }
 
-
-.btn_modal {
+.btn__modal {
     width: 209px;
     height: 44px;
     border-radius: 22px;
     // margin-top: 26px;
-
     // @media screen and (min-width: 768px ) {
     // }
-
     // @media screen and (min-width: 1280px ) {
     // }
 }
