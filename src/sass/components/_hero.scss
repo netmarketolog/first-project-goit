@@ -3,6 +3,11 @@
   padding-bottom: 158px;
   background-color: var(--hero-bg-primary);
   overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 102px;
+    padding-bottom: 16px;
+  }
 }
 .hero__container {
   position: relative;
@@ -11,6 +16,7 @@
   position: relative;
   z-index: 10;
   margin-bottom: 30px;
+  max-width: 220px;
 
   font-family: var(--font-title);
   font-weight: 400;
@@ -29,7 +35,11 @@
 .hero-nav {
   position: relative;
   z-index: 10;
-  display: flex;
+  display: inline-flex;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
 
   &__item {
     display: inline-flex;
@@ -74,6 +84,41 @@
   }
 }
 
+.product-box {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  display: inline-flex;
+  align-items: center;
+}
+.product-box__about {
+  max-width: 114px;
+}
+// .product-box__image {
+// }
+.product-box__text {
+  margin-bottom: 7px;
+
+  font-size: 8px;
+  line-height: 1.5;
+  color: var(--primary-bg);
+}
+.product-box__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--primary-bg);
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-hover-color);
+  }
+}
+
 .hero__circle {
   position: absolute;
   top: -100px;
@@ -83,9 +128,66 @@
   height: 344px;
   background-color: var(--circle-bg);
   border-radius: 50%;
+
+  @media screen and (min-width: 768px) {
+    top: -59px;
+    left: 248px;
+
+    width: 335px;
+    height: 333px;
+  }
 }
 .hero__image {
   position: absolute;
   bottom: -75px;
   right: 94px;
+
+  @media screen and (min-width: 768px) {
+    bottom: -83px;
+    right: 118px;
+  }
+}
+.retail {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  position: absolute;
+  top: -8px;
+  right: 42px;
+
+  display: flex;
+  flex-direction: column;
+}
+.retail__item {
+  position: relative;
+}
+.retail__item::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -10px;
+
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-bg);
+  border-radius: 50%;
+}
+.retail__item:not(:last-child) {
+  margin-bottom: 7px;
+}
+.retail__text {
+  position: relative;
+  z-index: 10;
+  font-size: 8px;
+  line-height: 10px;
+  text-align: right;
+  color: var(--primary-bg);
+}
+.retail__number {
+  font-family: var(--font-title);
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  color: var(--section-title-color);
 }

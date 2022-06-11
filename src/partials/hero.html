@@ -1,30 +1,83 @@
 <section class="hero">
   <div class="container hero__container">
-    <h1 class="hero__title">
-      ice cream<br />made with<br />
-      <span class="hero__title--red">passion</span>
-    </h1>
-    <ul class="hero-nav">
-      <li class="hero-nav__item hero-nav__item--red">
-        <a href="#products" class="hero-nav__link">Products</a>
-      </li>
-      <li class="hero-nav__item">
-        <a href="#about" class="hero-nav__link hero-nav__link--red"
-          >How it’s made?</a
-        >
-      </li>
-    </ul>
-    <div class="hero__circle">
+    <div class="hero__box">
+      <h1 class="hero__title">
+        ice cream made with <span class="hero__title--red">passion</span>
+      </h1>
+      <ul class="hero-nav">
+        <li class="hero-nav__item hero-nav__item--red">
+          <a href="#products" class="hero-nav__link">Products</a>
+        </li>
+        <li class="hero-nav__item">
+          <a href="#about" class="hero-nav__link hero-nav__link--red"
+            >How it’s made?</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="product-box">
       <img
         srcset="
-          ./images/mobile/icecream-hero-m.png    1x,
-          ./images/mobile/icecream-hero-m@2x.png 2x
+          ./images/tablet/bioeco-hero-t.png    1x,
+          ./images/tablet/bioeco-hero-t@2x.png 2x
         "
-        src="./images/mobile/icecream-hero-m.png"
-        alt="ice cream cone"
-        width="171"
-        class="hero__image"
+        src="./images/tablet/bioeco-hero-t.png"
+        alt="jug of milk"
+        width="152"
+        class="product-box__image"
       />
+      <div class="product-box__about">
+        <p class="product-box__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <button type="button" class="product-box__btn"></button>
+      </div>
     </div>
+    <div class="hero__circle">
+      <picture>
+        <source
+          srcset="
+            ./images/desktop/icecream-hero-d.png    1x,
+            ./images/desktop/icecream-hero-d@2x.png 2x
+          "
+          media="(min-width:1200px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/tablet/icecream-hero-t.png    1x,
+            ./images/tablet/icecream-hero-t@2x.png 2x
+          "
+          media="(min-width:768px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/mobile/icecream-hero-m.png    1x,
+            ./images/mobile/icecream-hero-m@2x.png 2x
+          "
+          media="(max-width:767px)"
+          type="image/png"
+        />
+        <img
+          src="./images/mobile/icecream-hero-m.png"
+          alt="ice cream cone"
+          class="hero__image"
+        />
+      </picture>
+    </div>
+    <ul class="retail">
+      <li class="retail__item">
+        <p class="retail__text">
+          <span class="retail__number">16</span><br />cafes
+        </p>
+      </li>
+      <li class="retail__item">
+        <p class="retail__text">
+          <span class="retail__number">23</span><br />food trucks
+        </p>
+      </li>
+    </ul>
   </div>
 </section>
