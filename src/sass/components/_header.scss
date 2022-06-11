@@ -12,7 +12,7 @@
     font-size: var(--font-size-label-tab);
     line-height: 1.15px;
     text-transform: uppercase;
-    color: var(--section-titl);
+    color: var(--section-title-color);
 }
 
 .logo__picture {
@@ -108,7 +108,7 @@
 }
 
 .site-nav__link--current {
-    color: var(--section-titl);
+    color: var(--section-title-color);
 }
 
 .is-hidden {
