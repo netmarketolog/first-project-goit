@@ -6,21 +6,17 @@
     text-align: center;
     border: none;
     justify-content: center;
-
     &--red {
         background-color: #D41443;
         color: #FFFFFF;
     }
-
     &--white {
         background-color: #FFFFFF;
         color: #D41443;
     }
-
     &--red:hover {
         background-color: #C7133E;
     }
-
     &--white:hover {
         background-color: #ECEBEB;
     }
@@ -29,7 +25,6 @@
 .btn__menu {
     width: 20px;
     height: 12px;
-
     @media screen and (min-width: 1280px) {
         display: none;
     }
@@ -39,12 +34,10 @@
     display: none;
     border-radius: 22px;
     height: 44px;
-
     @media screen and (min-width: 768px) {
         display: flex;
         width: 160px;
     }
-
     @media screen and (min-width: 1280px) {
         display: flex;
         width: 159px;
@@ -56,23 +49,18 @@
     font-size: 8px;
     line-height: 1.25;
     border-radius: 20px;
-
+    height: 24px;
     &--widht-red {
         width: 62.4px;
-        height: 24px;
     }
-
     &--widht-white {
         width: 82.8px;
-        height: 24px;
     }
-
     @media screen and (min-width: 1280px) {
         &--widht-red {
             width: 107px;
             height: 40px;
         }
-
         &--widht-white {
             width: 138px;
             height: 40px;
@@ -89,36 +77,30 @@
     line-height: 1.28;
 }
 
-.btn__contacts {
+.contacts__buttons {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
     border-radius: 22px;
     height: 44px;
-
     &--widht-red {
         width: 161.45px
     }
-
     &--widht-white {
         width: 161px
     }
-
     @media screen and (min-width: 768px) {
         &--widht-red {
             width: 191.45px;
         }
-
         &--widht-white {
             width: 174.05px;
         }
     }
-
     @media screen and (min-width: 1280px) {
         &--widht-red {
             width: 198px;
         }
-
         &--widht-white {
             width: 180px;
         }
@@ -129,7 +111,6 @@
     width: 209px;
     height: 44px;
     border-radius: 22px;
-
     @media screen and (min-width: 768px) {
         width: 186px;
         height: 44px;

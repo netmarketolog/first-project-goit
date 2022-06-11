@@ -67,5 +67,86 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 10px;
+  @media screen and (min-width: 768px){
+    flex-direction: row;
+    gap: 14.5px
+  }
+    @media screen and (min-width: 1280px) {
+      flex-direction: row;
+      gap: 15px
+    }
 }
+.contacts__button--locations{
+  width: 161.45px;
+  height: 44px;
+  border-radius: 22px;
+  border-color: transparent;
+  background-color: var(--btn-footer-accent) ;
+  color: var(--primary-bg);
+  
+  @media screen and (min-width: 768px) {
+    width: 191.45px;
+    
+  }
+    @media screen and (min-width: 1280px) {
+      width: 198px;
+    }
+}
+.contacts__button--locations:hover,
+.contacts__button--locations:focus{
+  background-color: var(--btn-footer-accent);
+}
+.contacts__button--franchise{
+  width: 161px;
+  height: 44px;
+  border-radius: 22px;
+  border-color: transparent;
+  background-color: var(--primary-bg) ;
+  color: var(--btn-footer-accent);
+  @media screen and (min-width: 768px) {
+      width: 174.05px;
+    }
+        @media screen and (min-width: 1280px) {
+          width: 180px;
+        }
+}
+.contacts__button--franchise:hover,
+.contacts__button--franchise:focus{
+  background-color: var(--btn-hover-color);
+}
+.btn-icon{
+  width: 3.61px;
+  height: 8px;
+
+  &--fr{
+  margin-left: 13.18px;
+  @media screen and (min-width: 768px) {
+      margin-left: 13.17px;
+    }
+        @media screen and (min-width: 1280px) {
+          margin-left: 13.62px;
+        }
+    
+}
+&--loc{
+
+    margin-left: 8px;
+    @media screen and (min-width: 768px) {
+        margin-left: 13.4px;
+      }
+            @media screen and (min-width: 1280px) {
+              margin-left: 13.62px;
+            }
+          }
+
+  @media screen and (min-width: 768px) {
+      width: 4.28px;
+    }
+  @media screen and (min-width: 1280px) {
+      width: 4.32px;
+    }}
+
+
+
