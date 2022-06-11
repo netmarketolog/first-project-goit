@@ -47,5 +47,8 @@
             <path fill="#fff" style="fill: var(--color1, #fff)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
             <path fill="#fff" style="fill: var(--color1, #fff)" d="M138.667 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
         </symbol>
+        <symbol id="icon-right-arrow-white" viewBox="0 0 26 32">
+            <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.542 3.2l16.825 12.8-16.825 12.8"></path>
+        </symbol>
     </defs>
 </svg>
