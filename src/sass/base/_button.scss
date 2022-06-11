@@ -6,8 +6,6 @@
     text-align: center;
     border: none;
     justify-content: center;
-    // background-color: transparent;
-    // transition: color 300ms linear, background-color 300ms;
     &--red {
         background-color: #D41443;
         color: #FFFFFF;
@@ -27,18 +25,23 @@
 .btn__menu {
     width: 20px;
     height: 12px;
-    // @media screen and (min-width: 768px ) {
-    // }
-    // @media screen and (min-width: 1280px ) {
-    // }
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
 }
 
 .btn__header {
     display: none;
-    // @media screen and (min-width: 768px ) {
-    // }
-    // @media screen and (min-width: 1280px ) {
-    // }
+    border-radius: 22px;
+    height: 44px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        width: 160px;
+    }
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        width: 159px;
+    }
 }
 
 .btn__hero {
@@ -46,18 +49,23 @@
     font-size: 8px;
     line-height: 1.25;
     border-radius: 20px;
+    height: 24px;
     &--widht-red {
         width: 62.4px;
-        height: 24px;
     }
     &--widht-white {
         width: 82.8px;
-        height: 24px;
     }
-    // @media screen and (min-width: 768px ) {
-    // }
-    // @media screen and (min-width: 1280px ) {
-    // }
+    @media screen and (min-width: 1280px) {
+        &--widht-red {
+            width: 107px;
+            height: 40px;
+        }
+        &--widht-white {
+            width: 138px;
+            height: 40px;
+        }
+    }
 }
 
 .btn__about {
@@ -67,15 +75,9 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.28;
-    // margin-top: 20px;
-    // margin-bottom: 40px;
-    // @media screen and (min-width: 768px ) {
-    // }
-    // @media screen and (min-width: 1280px ) {
-    // }
 }
-.contacts__buttons {
 
+.contacts__buttons {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
@@ -85,16 +87,37 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-
     @media screen and (min-width: 768px) {
         flex-direction: row;
         gap: 14.5px
     }
-
     @media screen and (min-width: 1280px) {
         flex-direction: row;
         gap: 15px
     }
+    //     height: 44px;
+    //     &--widht-red {
+    //         width: 161.45px
+    //     }
+    //     &--widht-white {
+    //         width: 161px
+    //     }
+    //     @media screen and (min-width: 768px) {
+    //         &--widht-red {
+    //             width: 191.45px;
+    //         }
+    //         &--widht-white {
+    //             width: 174.05px;
+    //         }
+    //     }
+    //     @media screen and (min-width: 1280px) {
+    //         &--widht-red {
+    //             width: 198px;
+    //         }
+    //         &--widht-white {
+    //             width: 180px;
+    //         }
+    //      }
 }
 
 .contacts__button--locations {
@@ -105,12 +128,9 @@
     border: none;
     background-color: var(--btn-footer-accent);
     color: var(--primary-bg);
-
     @media screen and (min-width: 768px) {
         width: 191.45px;
-
     }
-
     @media screen and (min-width: 1280px) {
         width: 198px;
     }
@@ -129,11 +149,9 @@
     border: none;
     background-color: var(--primary-bg);
     color: var(--btn-footer-accent);
-
     @media screen and (min-width: 768px) {
         width: 174.05px;
     }
-
     @media screen and (min-width: 1280px) {
         width: 180px;
     }
@@ -144,43 +162,39 @@
     background-color: var(--btn-hover-color);
 }
 
-    .btn-icon {
+.btn-icon {
     width: 3.61px;
     height: 8px;
     &--white {
         margin-left: 8px;
-
         @media screen and (min-width: 768px) {
             margin-left: 13.4px;
             width: 4.28px;
-            
         }
-            @media screen and (min-width: 1280px) {
-                margin-left: 13.62px;
-                width: 4.32px;
-            }}
-        
-        &--red {
-            margin-left: 13.18px;
-
-            @media screen and (min-width: 768px) {
-                margin-left: 13.17px;
-                width: 4.28px;
-            }
-
-            @media screen and (min-width: 1280px) {
-                margin-left: 13.62px;
-                width: 4.32px;
-                }
-        }}
+        @media screen and (min-width: 1280px) {
+            margin-left: 13.62px;
+            width: 4.32px;
+        }
+    }
+    &--red {
+        margin-left: 13.18px;
+        @media screen and (min-width: 768px) {
+            margin-left: 13.17px;
+            width: 4.28px;
+        }
+        @media screen and (min-width: 1280px) {
+            margin-left: 13.62px;
+            width: 4.32px;
+        }
+    }
+}
 
 .btn__modal {
     width: 209px;
     height: 44px;
     border-radius: 22px;
-    // margin-top: 26px;
-    // @media screen and (min-width: 768px ) {
-    // }
-    // @media screen and (min-width: 1280px ) {
-    // }
+    @media screen and (min-width: 768px) {
+        width: 186px;
+        height: 44px;
+    }
 }
