@@ -1,0 +1,85 @@
+.customer-reviews {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.reviews__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.reviews__body {
+  margin-top: 32px;
+  height: auto;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 145px;
+    left: 70px;
+    width: 54px;
+    height: 40px;
+    background-image: url(./../images/paws.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: none;
+  }
+}
+
+.reviews__block {
+  padding: 43px 58px 26px 65px;
+  margin-bottom: 36px;
+  background-color: #fafafa;
+}
+
+.reviews__text {
+  position: relative;
+  @include fonts(500, 12px, 2.5, null);
+  text-align: center;
+  color: #000000;
+  padding: 0 20px;
+  background: repeating-linear-gradient(
+    transparent 0px,
+    transparent 27px,
+    #e1e1e1 27px,
+    #e1e1e1 28px,
+    transparent 28px,
+    transparent 30px
+  );
+}
+.reviews__nameplace {
+  position: relative;
+}
+
+.reviews__name {
+  line-height: 1.86;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 4px;
+    top: -16px;
+    border: none;
+    background-image: url(./../images/dots.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 73px;
+    height: 12px;
+    top: 48px;
+    border: none;
+    background-image: url(./../images/house-dots.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
