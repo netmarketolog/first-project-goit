@@ -1,37 +1,30 @@
-<article class="example" id="uk">
-  <h1>HTML-partials</h1>
-
-  <!--
-    ❗️❗️❗️ The path to images from the HTML partial
-    is the same as from the index.html file
-  -->
-  <img src="images/logo.png" alt="" width="320" />
-
-  <p>
-    The
-    <a
-      href="https://github.com/posthtml/posthtml-include"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      posthtml-include
-    </a>
-    plugin allows you to add code from other HTML files (fragments) to HTML page
-    files. Fragments are stored in the <code>src/partials</code> folder. The
-    addition occurs when compiling page files, such as <code>index.html</code>.
-  </p>
-
-  <p>
-    This <code>example.html</code> file is an example of such a snippet, with
-    the markup of a certain part of the main page. This is very convenient for
-    team development on student projects, when several people write in one HTML
-    file at once.
-  </p>
-
-  <p>
-    The syntax for adding a fragment to the main file is:
-    <code> &lt;include src="./partials/filename.html"&gt;&lt;/include&gt;</code>
-  </p>
-
-  <div class="background"></div>
-</article>
+<section class="hero">
+  <div class="container hero__container">
+    <h1 class="hero__title">
+      ice cream<br />made with<br />
+      <span class="hero__title--red">passion</span>
+    </h1>
+    <ul class="hero-nav">
+      <li class="hero-nav__item hero-nav__item--red">
+        <a href="#products" class="hero-nav__link">Products</a>
+      </li>
+      <li class="hero-nav__item">
+        <a href="#about" class="hero-nav__link hero-nav__link--red"
+          >How it’s made?</a
+        >
+      </li>
+    </ul>
+    <div class="hero__circle">
+      <img
+        srcset="
+          ./images/mobile/icecream-hero-m.png    1x,
+          ./images/mobile/icecream-hero-m@2x.png 2x
+        "
+        src="./images/mobile/icecream-hero-m.png"
+        alt="ice cream cone"
+        width="171"
+        class="hero__image"
+      />
+    </div>
+  </div>
+</section>
