@@ -76,6 +76,7 @@
 }
 
 .contacts__buttons {
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
@@ -95,13 +96,20 @@
             flex-direction: row;
             gap: 15px
         }
+<<<<<<< Updated upstream
     
+=======
+>>>>>>> Stashed changes
 }
 .contacts__button--locations {
     width: 161.45px;
     height: 44px;
     border-radius: 22px;
+<<<<<<< Updated upstream
     border-color: transparent;
+=======
+    border: none;
+>>>>>>> Stashed changes
     background-color: var(--btn-footer-accent);
     color: var(--primary-bg);
 
@@ -124,7 +132,11 @@
     width: 161px;
     height: 44px;
     border-radius: 22px;
+<<<<<<< Updated upstream
     border-color: transparent;
+=======
+    border: none;
+>>>>>>> Stashed changes
     background-color: var(--primary-bg);
     color: var(--btn-footer-accent);
 
@@ -147,15 +159,23 @@
     height: 8px;
 
     &--white {
+<<<<<<< Updated upstream
         margin-left: 8px;
 
         @media screen and (min-width: 768px) {
             margin-left: 13.4px;
             width: 4.28px;
+=======
+        margin-left: 13.18px;
+
+        @media screen and (min-width: 768px) {
+            margin-left: 13.17px;
+>>>>>>> Stashed changes
         }
 
         @media screen and (min-width: 1280px) {
             margin-left: 13.62px;
+<<<<<<< Updated upstream
             width: 4.32px;
         }
     }
@@ -166,13 +186,36 @@
         @media screen and (min-width: 768px) {
             margin-left: 13.17px;
             width: 4.28px;
+=======
+        }
+
+    }
+
+    &--red {
+        margin-left: 8px;
+
+        @media screen and (min-width: 768px) {
+            margin-left: 13.4px;
+>>>>>>> Stashed changes
         }
 
         @media screen and (min-width: 1280px) {
             margin-left: 13.62px;
+<<<<<<< Updated upstream
             width: 4.43px;
         }
 
+=======
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 4.28px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 4.32px;
+>>>>>>> Stashed changes
     }
 }
 
