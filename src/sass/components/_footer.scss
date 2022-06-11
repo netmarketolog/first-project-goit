@@ -13,7 +13,7 @@
     box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
   }
 }
-///___...
+///
 .footer {
   background-color: #fff5f6;
   padding-top: 113px;
@@ -26,22 +26,8 @@
     padding-top: 165px;
     padding-bottom: 10px;
   }
-
-  .footer-container {
+.container {
     min-width: 320px;
-    padding: 0 20px;
-    margin: 0 auto;
-    @media screen and(min-width:480px) {
-      max-width: 480px;
-    }
-    @media screen and(min-width:768px) {
-      max-width: 768px;
-      padding: 0 36px;
-    }
-    @media screen and(min-width:1280px) {
-      max-width: 1280px;
-      padding: 0 15px;
-    }
 
     .section-footer {
       margin-left: 0px;
@@ -73,6 +59,8 @@
       display: flex;
     }
 }
+}
+  
 .section-footer {
   width: 234px;
   @media screen and(min-width:768px) {
@@ -88,7 +76,7 @@
     text-align: start;
   }
 }
-}
+
 
 .section-label{
 font-family: 'Titan One';
@@ -114,25 +102,26 @@ color: #D41443;
 .footer-feedback {
 display: flex;
 margin-left: auto;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: end;
+flex-direction: column;
+align-items: flex-end;
+text-align: end;
 margin-bottom: 43px;
 
 }
 .social-list {
-  display: flex;
-  margin-left: -28px;
-  margin-bottom: 40px;
-  @media screen and(min-width:1280px) {
-    margin-bottom: 50px;
-  }
-  
+display: flex;
+margin-left: -28px;
+margin-bottom: 40px;
+@media screen and(min-width:1280px) {
+margin-bottom: 50px;
+} 
 }
+
 .social-item {
-    margin-left: 28px;
-  }
-  .social-link {
+margin-left: 25px;
+}
+
+.social-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,12 +139,12 @@ margin-bottom: 43px;
 
 .social-link:hover,
 .social-link:focus {
-      background-color: #d41443;
-      transform: scale(1.2);
+background-color: #d41443;
+transform: scale(1.2);
 }
 .social-icon {
-    fill: inherit;
-    stroke: none;
+fill: inherit;
+stroke: none;
   }
 .footer-address {
 font-style: normal;
@@ -172,9 +161,9 @@ font-style: normal;
   }
 }
 .footer-address:hover,
-  .footer-address:focus {
-    transform: scale(1.2);
-  }
+.footer-address:focus {
+transform: scale(1.2);
+}
 .footer-tel {
   color: #d41443;
 }
@@ -185,15 +174,15 @@ font-style: normal;
     border: 1px solid #e1e1e1;
     margin-bottom: 22px;
     @media screen and(min-width:768px) {
-      margin-bottom: 29px;
+    margin-bottom: 29px;
     }
     @media screen and(min-width:1280px) {
-      margin-bottom: 9px;
+    margin-bottom: 9px;
     }
  }
 
 .footer-copyright{
-     text-align: center;
+    text-align: center;
 }
 .footer-license {
  margin-left: auto;
