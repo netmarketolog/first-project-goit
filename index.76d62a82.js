@@ -1,0 +1,2 @@
+(()=>{const e={openMenuBtn:document.querySelector(".header-menu__open"),closeMenuBtn:document.querySelector(".mob-menu__close"),menu:document.querySelector(".mob-menu"),header:document.querySelector("body")};function n(){e.menu.classList.toggle("is-hidden"),e.header.classList.toggle("no-scroll")}e.openMenuBtn.addEventListener("click",n),e.closeMenuBtn.addEventListener("click",n)})();
+//# sourceMappingURL=index.76d62a82.js.map
