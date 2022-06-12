@@ -1,5 +1,11 @@
 .header {
     background-color: var(--hero-bg-primary);
+    @media (min-width: 768px) {
+            padding-top: 32px;
+        }
+    @media (min-width: 1280px) {
+            padding-top: 37px;
+        }
 }
 
 .logo__header {
@@ -13,6 +19,9 @@
     line-height: 1.15px;
     text-transform: uppercase;
     color: var(--section-title-color);
+    @media (min-width: 768px) {
+        padding: 0px;
+    }
 }
 
 .logo__picture {
@@ -29,6 +38,9 @@
     @media (min-width: 768px) {
         margin-right: 32px;
     }
+    @media (min-width: 1280px) {
+        display: none;
+    }
 }
 
 .header__container {
@@ -36,8 +48,12 @@
     justify-content: center;
     display: flex;
     position: relative;
+    @media (min-width: 1280px) {
+            justify-content: space-between;
+        }
 }
 
+@media (max-width: 1279px) {
 .mob-menu {
     position: absolute;
     position: fixed;
@@ -57,7 +73,7 @@
         width: 40%;
     }
 }
-
+}
 .mob-menu.is-hidden{
     transform: translateX(0);
     opacity: 1;
@@ -74,6 +90,9 @@
     position: absolute;
     top: 20px;
     right: 20px;
+    @media (min-width: 1280px) {
+        display: none;
+    }
 }
 
 .button__order {
@@ -93,6 +112,9 @@
     color: var(--section-title-color);
 
     margin: 60px 20px 20px 19px;
+    @media (min-width: 1280px) {
+        display: none;
+    }
 }
 
 .tab-button__order{
@@ -113,6 +135,29 @@
     background-color: var(--primary-bg);
     color: var(--section-title-color);
     }
+    @media (min-width: 1280px) {
+        display: none;
+    }
+}
+
+.desc-button__order {
+    display: none;
+    @media (min-width: 1280px) {
+        padding: 11px 0px;
+        display: inline-block;
+        border: 0;
+        border-radius: 22px;
+        min-width: 160px;
+
+        font-weight: 700;
+        font-size: var(--primary-font-size);
+        line-height: 1.31;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        background-color: var(--primary-bg);
+        color: var(--section-title-color);
+    }
 }
 
 .buttob-order__icon{
@@ -122,9 +167,17 @@
 .site-nav__item {
     border-top: 1px solid #E18298;
     border-bottom: 1px solid #E18298;
+    @media (min-width: 1280px) {
+        border: none;
+    }
 
 }
-
+.site-nav__list{
+    @media (min-width: 1280px) {
+        display: flex;
+        gap: 35px;
+    }
+}
 .site-nav__link {
     padding: 11px 0px;
     font-weight: 700;
@@ -134,6 +187,11 @@
     align-items: center;
     color: var(--primary-bg);
     padding-left: 20px;
+    @media (min-width: 1280px) {
+        padding-left: 0px;
+        font-size: 16px;
+        line-height: 1.31;
+    }
 
 }
 
