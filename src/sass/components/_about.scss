@@ -1,0 +1,82 @@
+.section__about {
+  background-color: #fff5f6;
+}
+.conteiner {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.about__text-top {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffa5ba;
+
+  margin-bottom: 15px;
+}
+.about__title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #d41443;
+
+  margin-bottom: 32px;
+}
+.about__img {
+  margin-bottom: 40px;
+}
+.container__about__text {
+  background-image: url('../images/mobile/about-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.about__text-midle {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: #000000;
+
+  padding-right: 60px;
+  margin-bottom: 40px;
+}
+.about__text-bottom {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: #907e82;
+
+  padding-right: 60px;
+  margin-bottom: 20px;
+}
+.about__button {
+  display: inline-block;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  align-items: center;
+  text-align: center;
+  color: #d41443;
+  background: #ffffff;
+  border-radius: 22px;
+
+  padding: 8px;
+}
