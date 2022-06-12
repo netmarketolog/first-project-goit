@@ -541,6 +541,10 @@ button {
   }
 }
 
+.section__gallery {
+  background-image: linear-gradient(to top, #ffffff 57%, #fff5f6 43%);
+}
+
 .gallery__img {
   width: 100%;
 }
