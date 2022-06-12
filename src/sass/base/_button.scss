@@ -205,10 +205,16 @@
     border-radius: 22px;
     background-color: var(--primary-bg);
     color:var(--section-title-color);
-    font-family: DM Sans; 
+    font-family: " DM Sans"; 
     font-style: bold; 
     font-size: 14px;
-    line-height: calc(18/14); 
+    line-height: calc(18/14);
+    margin-top: 20px;
+    @media screen and (min-width: 1280px){
+        margin-top: 40px;
+        font-size: var(--primary-font-size);
+        line-height: calc(21/16);
+    }
     .btn-icon--dist{
         margin-left: 13.62px;
         width: 4.43px;
