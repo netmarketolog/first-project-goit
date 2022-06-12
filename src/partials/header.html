@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" id="home">
     <div class="container header__container">
         <a href="./index.html" title="Главная страница" rel="noopener noindex nofollow" class="logo__header">
             <img src="./images/mobile/logo-header-m.png" alt="Логотип" class="logo__picture">icecream
@@ -8,22 +8,27 @@
                 <use href="./images/symbol-defs-withfill.svg#icon-Burger"></use>
             </svg>
         </button>
+        <button type="button" class="tab-button__order">Buy now
+            <svg class="buttob-order__icon" width="8" height="10">
+                <use href="./images/symbol-defs-withfill.svg#icon-right-arrow" class="q"></use>
+            </svg>
+        </button>
     </div>
-    <div class="mob-menu is-hidden">
+    <div class="mob-menu">
         <button type="button" class="mob-menu__close">
             <svg class="menu-close__icon" width="14" height="14">
                 <use href="./images/symbol-defs-withfill.svg#icon-close"></use>
             </svg>
         </button>
         <nav class="site-nav">
-            <button type="button" class="buttob__order">Buy now
+            <button type="button" class="button__order">Buy now
                 <svg class="buttob-order__icon" width="8" height="10">
                     <use href="./images/symbol-defs-withfill.svg#icon-right-arrow" class="q"></use>
                 </svg>
             </button>
             <ul class="site-nav__list list">
                 <li class="site-nav__item">
-                    <a href="" title="Home" class="site-nav__link site-nav__link--current">Home</a>
+                    <a href="#home" title="Home" class="site-nav__link site-nav__link--current">Home</a>
                 </li>
                 <li class="site-nav__item">
                     <a href="" title="About us" class="site-nav__link">About us</a>
@@ -35,7 +40,7 @@
                     <a href="" title="Our products" class="site-nav__link">Our products</a>
                 </li>
                 <li class="site-nav__item">
-                    <a href="" title="Contact" class="site-nav__link">Contact</a>
+                    <a href="#contacts" title="Contact" class="site-nav__link">Contact</a>
                 </li>
             </ul>
         </nav>
