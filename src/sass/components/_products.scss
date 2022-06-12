@@ -11,10 +11,10 @@
 .products__text-main {
     margin-bottom: 15px;
     font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.17;
+    @include fonts(400, 18px, 1.17, null);
+    // font-weight: 400;
+    // font-size: 18px;
+    // line-height: 1.17;
     text-align: center;
     text-transform: uppercase;
     color: #FFA5BA;
@@ -28,12 +28,12 @@
 .products__title {
     margin-bottom: 8px;
     font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 1.15;
+    @include fonts(400, 34px, 1.15, 0.04em);
+    // font-weight: 400;
+    // font-size: 34px;
+    // line-height: 1.15;
     text-align: center;
-    letter-spacing: 0.04em;
+    // letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #D41443;
     @media screen and (min-width: 768px) {
@@ -131,12 +131,12 @@
     position: relative;
     margin-bottom: 70px;
     font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.15;
+    @include fonts(400, 20px, 1.15, 0.04em);
+    // font-weight: 400;
+    // font-size: 20px;
+    // line-height: 1.15;
     text-align: center;
-    letter-spacing: 0.04em;
+    // letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -162,12 +162,12 @@
 .products__subtext {
     margin-bottom: 32px;
     font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.52;
+    @include fonts(700, 14px, 1.52, 0.04em);
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.52;
     text-align: center;
-    letter-spacing: 0.04em;
+    // letter-spacing: 0.04em;
     color: #FFFFFF;
 }
 
