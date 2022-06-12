@@ -198,3 +198,31 @@
         height: 44px;
     }
 }
+.btn-about{
+    width: 176px;
+    height: 44px;
+    border: none;
+    border-radius: 22px;
+    background-color: var(--primary-bg);
+    color:var(--section-title-color);
+    font-family: " DM Sans"; 
+    font-style: bold; 
+    font-size: 14px;
+    line-height: calc(18/14);
+    margin-top: 20px;
+    @media screen and (min-width: 1280px){
+        margin-top: 40px;
+        font-size: var(--primary-font-size);
+        line-height: calc(21/16);
+    }
+    .btn-icon--dist{
+        margin-left: 13.62px;
+        width: 4.43px;
+        height: 8px;
+    }
+}
+.btn-about:hover,
+.btn-about:focus {
+    background-color: var(--btn-hover-color);
+}
+
