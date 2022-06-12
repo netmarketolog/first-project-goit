@@ -56,37 +56,37 @@
 .advantages__item:first-child::before {
   width: 33px;
   height: 50px;
-  background-image: url(/src/images/mobile/icon1-advantages-m.png);
+  background-image: url(../images/mobile/icon1-advantages-m.png);
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(/src/images/mobile/icon1-advantages-m@2x.png);
+    background-image: url(../images/mobile/icon1-advantages-m@2x.png);
   }
   @media screen and (min-width: 1280px) {
-    background-image: url(/src/images/desktop/icon1-advantages-d.png);
+    background-image: url(../images/desktop/icon1-advantages-d.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/src/images/desktop/icon1-advantages-d@2x.png);
+      background-image: url(../images/desktop/icon1-advantages-d@2x.png);
     }
   }
 }
 
 .advantages__item:nth-child(2)::before {
-  background-image: url(/src/images/mobile/icon2-advantages-m.png);
+  background-image: url(../images/mobile/icon2-advantages-m.png);
   width: 50px;
   height: 50px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(/src/images/mobile/icon2-advantages-m@2x.png);
+    background-image: url(../images/mobile/icon2-advantages-m@2x.png);
   }
   @media screen and (min-width: 1280px) {
-    background-image: url(/src/images/desktop/icon2-advantages-d.png);
+    background-image: url(../images/desktop/icon2-advantages-d.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/src/images/desktop/icon2-advantages-d@2x.png);
+      background-image: url(../images/desktop/icon2-advantages-d@2x.png);
     }
   }
 }
@@ -94,19 +94,19 @@
 .advantages__item:last-child::before {
   width: 44px;
   height: 50px;
-  background-image: url(/src/images/mobile/icon3-advantages-m.png);
+  background-image: url(../images/mobile/icon3-advantages-m.png);
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(/src/images/mobile/icon3-advantages-m@2x.png);
+    background-image: url(../images/mobile/icon3-advantages-m@2x.png);
   }
   @media screen and (min-width: 1280px) {
-    background-image: url(/src/images/desktop/icon3-advantages-d.png);
+    background-image: url(../images/desktop/icon3-advantages-d.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/src/images/desktop/icon3-advantages-d@2x.png);
+      background-image: url(../images/desktop/icon3-advantages-d@2x.png);
     }
   }
 }
