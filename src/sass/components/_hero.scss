@@ -1,21 +1,37 @@
 .hero {
-  padding-top: 191px;
-  padding-bottom: 158px;
   background-color: var(--hero-bg-primary);
-  overflow: hidden;
-
-  @media screen and (min-width: 768px) {
-    padding-top: 102px;
-    padding-bottom: 16px;
-  }
 }
 .hero__container {
   position: relative;
+  padding-top: 136px;
+  padding-bottom: 158px;
+  overflow-x: hidden;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 16px;
+    overflow-x: visible;
+  }
 }
-.hero__title {
+
+// ---------- hero__box-one ----------
+.hero__box-one {
   position: relative;
   z-index: 10;
-  margin-bottom: 30px;
+
+  display: inline-flex;
+  flex-direction: column;
+}
+.caption-box {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
+}
+.hero__title {
+  margin-bottom: 20px;
   max-width: 220px;
 
   font-family: var(--font-title);
@@ -26,61 +42,64 @@
   text-transform: uppercase;
   color: var(--primary-bg);
 
+  @media screen and (min-width: 768px) {
+    max-width: 170px;
+
+    font-size: 22px;
+    line-height: 1.14;
+  }
+
   &--red {
     font-size: 48px;
     line-height: 0.96;
     color: var(--section-title-color);
+
+    @media screen and (min-width: 768px) {
+      font-size: 34px;
+      line-height: 0.91;
+    }
   }
 }
 .hero-nav {
-  position: relative;
-  z-index: 10;
   display: inline-flex;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 20px;
-  }
-
-  &__item {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-
-    min-width: 62px;
-    min-height: 24px;
-    background-color: var(--primary-bg);
-    border-radius: 20px;
-
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__item:hover,
-  &__item:focus {
-    background-color: var(--btn-hover-color);
-  }
-  &__item--red {
-    background-color: var(--section-title-color);
-  }
-  &__item--red:hover,
-  &__item--red:focus {
-    background-color: var(--btn-hover-color-accent);
-  }
 
   &__item:not(:last-child) {
     margin-right: 8px;
   }
 
   &__link {
-    display: block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
     padding: 7px 14px;
+
+    min-width: 62px;
+    min-height: 24px;
+    background-color: var(--primary-bg);
+    border-radius: 20px;
 
     font-size: 8px;
     line-height: 10px;
     color: var(--primary-bg);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link--white {
+    background-color: var(--section-title-color);
   }
   &__link--red {
     color: var(--section-title-color);
+  }
+  &__link--white:hover,
+  &__link--white:focus {
+    background-color: var(--btn-hover-color-accent);
+  }
+  &__link--red:hover,
+  &__link--red:focus {
+    background-color: var(--btn-hover-color);
   }
 }
 
@@ -92,13 +111,10 @@
   align-items: center;
 }
 .product-box__about {
-  max-width: 114px;
+  max-width: 120px;
 }
-// .product-box__image {
-// }
 .product-box__text {
   margin-bottom: 7px;
-
   font-size: 8px;
   line-height: 1.5;
   color: var(--primary-bg);
@@ -112,54 +128,67 @@
   border-radius: 50%;
   border: none;
   background-color: var(--primary-bg);
+  fill: var(--section-title-color);
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     background-color: var(--btn-hover-color);
+    fill: var(--btn-hover-color-accent);
   }
 }
 
-.hero__circle {
+// ---------- hero__box-two ----------
+.hero__box-two {
   position: absolute;
-  top: -100px;
-  right: -62px;
+  bottom: 0;
+  left: 36%;
+}
 
+.hero__box-two::before {
+  content: '';
+  position: absolute;
+  top: -9px;
+  left: -84px;
+
+  display: block;
   width: 346px;
   height: 344px;
   background-color: var(--circle-bg);
   border-radius: 50%;
 
   @media screen and (min-width: 768px) {
-    top: -59px;
-    left: 248px;
+    top: -37px;
+    left: -74px;
 
     width: 335px;
     height: 333px;
   }
 }
 .hero__image {
-  position: absolute;
-  bottom: -75px;
-  right: 94px;
-
-  @media screen and (min-width: 768px) {
-    bottom: -83px;
-    right: 118px;
-  }
+  position: relative;
 }
-.retail {
+
+// ---------- hero__box-three ----------
+.hero__box-three {
   @media screen and (max-width: 767px) {
     display: none;
   }
   position: absolute;
-  top: -8px;
-  right: 42px;
-
-  display: flex;
+  bottom: 0;
+  right: 32px;
+  display: inline-flex;
   flex-direction: column;
+}
+.retail {
+  margin-bottom: 70px;
 }
 .retail__item {
   position: relative;
+  right: 10px;
 }
 .retail__item::after {
   content: '';
