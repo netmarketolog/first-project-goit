@@ -3,12 +3,12 @@
 }
 .hero__container {
   position: relative;
-  padding-top: 136px;
+  padding-top: 194px;
   padding-bottom: 158px;
   overflow-x: hidden;
 
   @media screen and (min-width: 768px) {
-    padding-top: 20px;
+    padding-top: 102px;
     padding-bottom: 16px;
     overflow-x: visible;
   }
@@ -111,7 +111,7 @@
   align-items: center;
 }
 .product-box__about {
-  max-width: 120px;
+  max-width: 115px;
 }
 .product-box__text {
   margin-bottom: 7px;
@@ -146,6 +146,10 @@
   position: absolute;
   bottom: 0;
   left: 36%;
+
+  @media screen and (min-width: 768px) {
+    left: 322px;
+  }
 }
 
 .hero__box-two::before {
