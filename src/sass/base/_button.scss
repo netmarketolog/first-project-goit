@@ -163,29 +163,26 @@
 }
 
 .btn-icon {
-    width: 3.61px;
-    height: 8px;
+    
+    @media screen and (min-width: 1280px) {
+            margin-left: 13.62px;
+            // width: 4.32px;
+        }
     &--white {
         margin-left: 8px;
         @media screen and (min-width: 768px) {
             margin-left: 13.4px;
-            width: 4.28px;
+            // width: 4.28px;
         }
-        @media screen and (min-width: 1280px) {
-            margin-left: 13.62px;
-            width: 4.32px;
-        }
+        
     }
     &--red {
         margin-left: 13.18px;
         @media screen and (min-width: 768px) {
             margin-left: 13.17px;
-            width: 4.28px;
+            // width: 4.28px;
         }
-        @media screen and (min-width: 1280px) {
-            margin-left: 13.62px;
-            width: 4.32px;
-        }
+        
     }
 }
 
@@ -204,20 +201,16 @@
     border: none;
     border-radius: 22px;
     background-color: var(--primary-bg);
-    color:var(--section-title-color); 
-    font-weight: bold; 
-    font-size: 14px;
-    line-height: calc(18/14);
-    margin-top: 20px;
-    @media screen and (min-width: 1280px){
-        margin-top: 40px;
-        font-size: var(--primary-font-size);
-        line-height: calc(21/16);
+    color:var(--section-title-color);
+    @include fonts(700, null, 1.2558, null);
+    margin-top: 40px;
+    @media screen and (min-width: 768px){
+        @include fonts(700, 16px, 1.3125, null);
+        
     }
     .btn-icon--dist{
         margin-left: 13.62px;
-        width: 4.43px;
-        height: 8px;
+        
     }
 }
 .btn-about:hover,

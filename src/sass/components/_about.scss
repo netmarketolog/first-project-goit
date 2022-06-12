@@ -8,7 +8,7 @@
     background-color: var(--secondary-bg);
     padding-top: 60px;
     @media screen and (min-width: 390px){
-        background-position: left 86%, 100% 85%;
+        background-position: left 84%, 100% 85%;
     }
 @media screen and (min-width: 768px) {
         padding-top: 20px;
@@ -30,20 +30,19 @@
     margin-right: auto;
     font-family: 'Titan One';
     color: var(--circle-bg);
-    font-size: var(--font-size-label-mob);
-    line-height: calc(21/18);
+    @include fonts(400, 18px, 1.17, null);
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 15px;
+
     @media screen and (min-width: 768px) {
         width: 100%;
-        font-size: var(--font-size-label-tab); 
-        line-height: calc(30/26);
+        @include fonts(400, 26px, 1.1538, null);
     }
+
     @media screen and (min-width: 1280px) {
         width: 100%;
-        font-size: var(--font-size-label-desk);
-        line-height: calc(34/30);
+        @include fonts(400, 30px, 1.1333, null);
         margin-bottom: 16px;
         }
 }
@@ -53,31 +52,25 @@
     margin-right: auto;
     margin-bottom: 32px;
     font-family: 'Titan One';
-    font-weight: 400;
+    @include fonts(400, 34px, 1.47, null);
     color: var(--section-title-color);
-    font-size: var(--font-size-title-mob);
-    line-height: calc(39/34);
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.04em;
     @media screen and (min-width: 768px) {
             width: 100%;
-            font-size: var(--font-size-title-tab);
-            line-height: calc(50/48);
+            @include fonts(400, 48px, 1.1458, null);
         }
                 @media screen and (min-width: 1280px) {
                     width: 100%;
                     margin-bottom: 60px;
-                    font-size: var(--font-size-title-desk);
-                    line-height: calc(66/58);
+                    @include fonts(400, 58px, 1.1379, null);
                 }
 }
 
 .about__text {
     width: 220px;
     color: var(--primary-text-color);
-    font-size: var(--primary-font-size-mob);
-    line-height: calc(19/12);
+    @include fonts(null, 12px, 1.5833, null);
     text-align: left;
     margin-top: 40px;
     @media screen and (min-width: 390px){
@@ -86,21 +79,19 @@
 
     @media screen and (min-width: 768px) {
     width: 334px;
-    font-size: var(--secondary-font-size);
-    line-height: calc(25/14);
+    @include fonts(null, null, 1.7857, null);
 }
  @media screen and (min-width: 1280px) {
      width: 463px;
-     font-size: var(--secondary-font-size);
-     line-height: calc(27/14);
+    @include fonts(null, 16px, 1.75, null);
      margin-top: 32px;
  }
  &--black{
     color: var(--secondary-text-color);
-    @media screen and (min-width: 1280px) {
-            font-size: var(--primary-font-size);
-            line-height: calc(28/16);
+    @media screen and (min-width: 768px) {
+            @include fonts(null, null, 1.7857, null);
         }
+   
 }
 }
 
@@ -112,7 +103,7 @@
 }
 @media screen and (min-width: 1280px) {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-around;    
 }
 }
 

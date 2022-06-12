@@ -169,31 +169,3 @@
   }
 }
 
-.btn-icon {
-  width: 3.61px;
-  height: 8px;
-  &--fr {
-    margin-left: 13.18px;
-    @media screen and (min-width: 768px) {
-      margin-left: 13.17px;
-    }
-    @media screen and (min-width: 1280px) {
-      margin-left: 13.62px;
-    }
-  }
-  &--loc {
-    margin-left: 8px;
-    @media screen and (min-width: 768px) {
-      margin-left: 13.4px;
-    }
-    @media screen and (min-width: 1280px) {
-      margin-left: 13.62px;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    width: 4.28px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 4.32px;
-  }
-}
