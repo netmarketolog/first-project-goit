@@ -157,6 +157,9 @@
         justify-content: center;
         background-color: var(--primary-bg);
         color: var(--section-title-color);
+        &:hover, &:focus {
+            background-color: var(--btn-hover-color);
+        }
     }
 }
 
@@ -191,12 +194,18 @@
         padding-left: 0px;
         font-size: 16px;
         line-height: 1.31;
+        &:hover, &:focus {
+            color: var(--btn-hover-color);
+        }
     }
 
 }
 
 .site-nav__link--current {
     color: var(--section-title-color);
+    &:hover, &:focus {
+            color: var(--btn-hover-color-accent);
+        }
 }
 
 // .is-hidden {
