@@ -75,29 +75,29 @@
         text-align: start;
         margin-bottom: 16px;
         font-family: 'Titan One';
-        @include fonts(null, 18px, 1.16, null);
+        @include fonts(400, 18px, 1.16, null);
         text-transform: uppercase;
         color: #ffa5ba;
         @media screen and(min-width: 768px) {
             margin-bottom: 12px;
-            @include fonts(null, 26px, 1.15, 0.04em);
+            @include fonts(400, 26px, 1.15, 0.04em);
         }
         @media screen and(min-width: 1280px) {
             margin-bottom: 16px;
-            @include fonts(null, 30px, 1.33, null);
+            @include fonts(400, 30px, 1.33, null);
         }
     }
     
     .section-title {
         font-family: 'Titan One';
-        @include fonts(null, 34px, 1.14, 0.04em);
+        @include fonts(400, 34px, 1.14, 0.04em);
         text-transform: uppercase;
         color: #d41443;
         @media screen and(min-width: 768px) {
-            @include fonts(null, 48px, 1.145, 0.06em);
+            @include fonts(400, 48px, 1.145, 0.06em);
         }
         @media screen and(min-width: 1280px) {
-            @include fonts(null, 58px, 1.13, null);
+            @include fonts(400, 58px, 1.13, null);
         }
     }
     
