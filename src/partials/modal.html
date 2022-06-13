@@ -1,0 +1,89 @@
+<div class="modal is-hidden" data-modal>
+    <div class="modal-window">
+        <h2 class="modal-title">Leave your details, we will call you back</h2>
+        <button class="modal-button" data-modal-close>
+      <svg class="modal-svg">
+        <use
+          href="./images/symbol-defs-withfill.svg#icon-close-black-18dp"
+        ></use>
+      </svg>
+    </button>
+        <form class="modal-form" autocomplete="on">
+            <label for="modal-name" class="form-label">Name</label>
+            <div class="modal-container">
+                <input type="text" class="form-input" name="modal-name" id="modal-name" />
+                <svg class="modal-form-svg">
+          <use href="./images/symbol-defs-withfill.svg#icon-person-black"></use>
+        </svg>
+            </div>
+            <label for="modal-tel" class="form-label">Phone</label>
+            <div class="modal-container">
+                <input type="tel" class="form-input" name="modal-tel" id="modal-tel" />
+                <svg class="modal-form-svg">
+          <use href="./images/symbol-defs-withfill.svg#icon-phone-black"></use>
+        </svg>
+            </div>
+            <label for="modal-email" class="form-label">Mail</label>
+            <div class="modal-container">
+                <input type="email" class="form-input" name="modal-email" id="modal-email" />
+                <svg class="modal-form-svg">
+          <use href="./images/symbol-defs-withfill.svg#icon-email-black"></use>
+        </svg>
+            </div>
+            <div class="form-group" role="group" aria-labelledby="language-head">
+                <!-- <p id="language-head">Your favourite programming language</p> -->
+                <label class="form-group__label">
+          <input
+            class="form-group__input"
+            type="checkbox"
+            name="language"
+            value="ice"
+          />
+          Ice cream
+        </label>
+                <label class="form-group__label">
+          <input
+            class="form-group__input"
+            type="checkbox"
+            name="language"
+            value="milk"
+          />
+          Milk
+        </label>
+                <label class="form-group__label">
+          <input
+            class="form-group__input"
+            type="checkbox"
+            name="language"
+            value="jam"
+          />
+          Jam
+        </label>
+            </div>
+            <div class="mod-con">
+                <!-- <label for="size">Size</label> -->
+                <select id="size" name="size">
+          <option value="xs">Extra Small</option>
+          <option value="s">Small</option>
+          <option value="m" selected>Ice cream</option>
+          <option value="l">Large</option>
+        </select>
+                <!-- <label for="size">Size</label> -->
+                <select id="size" name="size">
+          <option value="xs">Extra Small</option>
+          <option value="s">Small</option>
+          <option value="m" selected>Milk</option>
+          <option value="l">Large</option>
+        </select>
+                <!-- <label for="size">Size</label> -->
+                <select id="size" name="size">
+          <option value="xs">Extra Small</option>
+          <option value="s">Small</option>
+          <option value="m" selected>Jam</option>
+          <option value="l">Large</option>
+        </select>
+            </div>
+            <button type="submit" class="button__order button__submit">Send</button>
+        </form>
+    </div>
+</div>
