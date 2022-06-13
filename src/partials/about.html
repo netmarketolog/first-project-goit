@@ -66,6 +66,29 @@
         </svg>
       </button>
       <form>
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/bioeco-hero-d.png    1x,
+              ./images/desktop/bioeco-hero-d@2x.png 2x
+            "
+            media="(min-width:1280px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/tablet/bioeco-hero-t.png    1x,
+              ./images/tablet/bioeco-hero-t@2x.png 2x
+            "
+            media="(min-width:768px)"
+            type="image/png"
+          />
+          <img
+            src="./images/tablet/bioeco-hero-t.png"
+            alt="jug of milk"
+            class="circle"
+          />
+        </picture>
         <p class="modal__text">
           Ice cream is a dessert product, which is a mass frozen in the process
           of continuous beating, containing in its basis nutritious, flavoring,
@@ -78,8 +101,7 @@
           components, a preservative and a modifier of the rheological
           properties of the mixture at all stages of the technological process
           of ice cream production. Agar-agar, gelatin, starch are used as an
-          emulsifying component of industrially produced ice cream. There are
-          ice cream recipes that use egg whites as an emulsifying component.
+          emulsifying component of industrially produced ice cream.
         </p>
       </form>
     </div>
