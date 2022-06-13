@@ -245,12 +245,22 @@
 }
 
 .products__btn {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
-    // width: 40px;
-    // height: 40px;
-    // background-color: #FFFFFF;
-    // border-radius: 50%;
-    // border: transparent;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-bg);
+    border-radius: 50%;
+    border: transparent;
+    fill: var(--section-title-color);
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: var(--section-title-color);
+        fill: var(--primary-bg);
+    }
 }
