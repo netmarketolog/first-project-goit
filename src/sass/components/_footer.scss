@@ -17,44 +17,26 @@
     ///
     .footer {
         background-color: #fff5f6;
-        .container {
-            min-width: 320px;
-            .section-header {
-                @media screen and(max-width: 767px) {
-                    margin-left: 0px;
-                    margin-bottom: 40px;
-                }
-                // @media screen and(min-width: 768px) {
-                //     margin-bottom: 91px;
-                // }
-                // @media screen and(min-width:1280px) {
-                //     margin-bottom: 97px;
-                // }
-            }
-            // .section-heading {
-            //     margin-bottom: 16px;
-            //     @media screen and(min-width: 1280px) {
-            //         font-size: 30px;
-            //         line-height: 1.133;
-            //         letter-spacing: 0.04em;
-            //     }
-            // }
-            //  Зачем дублируешь section-title???
-            // .section-page {
-            //     font-weight: normal;
-            //     @media screen and(min-width: 1280px) {
-            //         font-size: 58px;
-            //         line-height: 1.138;
-            //         letter-spacing: 0.06em;
-            //     }
-            // }
-            @media screen and(min-width:768px) {
-                display: flex;
-            }
+     .container {
+        min-width: 320px;
+     .section-head {
+        @media screen and(max-width: 767px) {
+        margin-left: 0px;
+        margin-bottom: 40px;
         }
+        }
+        @media screen and(min-width:768px) {
+        display: flex;
+        }
+    }   
     }
     
-    .section-header {
+    
+    .section__footer {
+        padding-top: 0px;
+    }
+    
+    .section-head {
         width: 234px;
         @media screen and(min-width: 768px) {
             width: 340px;
@@ -62,16 +44,7 @@
         @media screen and(min-width:1280px) {
             width: 477px;
         }
-        // .section-label {
-        //     text-align: start;
-        //     margin-bottom: 16px;
-        // }
-        // .section-title {
-        //     text-align: start;
-        // }
-    }
-    
-    .section-label {
+        &__label {
         text-align: start;
         margin-bottom: 16px;
         font-family: 'Titan One';
@@ -88,7 +61,7 @@
         }
     }
     
-    .section-title {
+        &__title {
         font-family: 'Titan One';
         @include fonts(400, 34px, 1.14, 0.04em);
         text-transform: uppercase;
@@ -100,8 +73,9 @@
             @include fonts(400, 58px, 1.13, null);
         }
     }
+    }
     
-    .footer-feedback {
+    .footer__feedback {
         display: flex;
         margin-left: auto;
         flex-direction: column;
@@ -111,18 +85,14 @@
     
     .social-list {
         display: flex;
-        // margin-left: -28px;
         margin-bottom: 40px;
         @media screen and(min-width: 1280px) {
             margin-bottom: 50px;
         }
-    }
-    
-    .social-item {
+        &__item {
         margin-left: 25px;
     }
-    
-    .social-link {
+        &__link {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -136,20 +106,19 @@
             width: 34px;
             height: 34px;
         }
-    }
-    
-    .social-link:hover,
-    .social-link:focus {
+       }
+        &__link:hover,
+        &__ink:focus {
         background-color: #d41443;
         transform: scale(1.2);
     }
-    
-    .social-icon {
+        &__icon {
         fill: inherit;
         stroke: none;
     }
+    }
     
-    .footer-address {
+    .footer__address {
         @include fonts(700, 12px, 1.86, null);
         font-style: normal;
         color: #000000;
@@ -159,35 +128,28 @@
         @media screen and(min-width:768px) {
             font-size: 16px;
         }
-    }
-    
-    .footer-address:hover,
-    .footer-address:focus {
+        &:hover,
+        &:focus {
         transform: scale(1.2);
     }
+    }
     
-    .footer-tel {
+    .footer__tel {
         color: #d41443;
     }
     
-    .footer-copyright::before {
+    .footer__copyright::before {
         content: '';
         display: block;
         border: 1px solid #e1e1e1;
-        //     margin-bottom: 22px;
-        //     @media screen and(min-width: 768px) {
-        //         margin-bottom: 29px;
-        //     }
-        //     @media screen and(min-width:1280px) {
-        //         margin-bottom: 9px;
-        //     }
+      
     }
     
-    .footer-copyright {
+    .footer__copyright {
         text-align: center;
     }
     
-    .footer-license {
+    .footer__license {
         width: 150px;
         margin-left: auto;
         margin-right: auto;
@@ -205,6 +167,3 @@
         }
     }
     
-    .section__footer {
-        padding-top: 0px;
-    }
