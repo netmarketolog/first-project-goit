@@ -136,7 +136,7 @@
     background-color: var(--mobile-menu-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    border-radius: 20px;
 
     @media screen and (min-width: 480px) {
         top: 50%;
@@ -146,6 +146,12 @@
     }
 
     @media screen and (min-width: 768px) {
+        width: 450px;
+        height: 609px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        height: 581px;
         width: 528px;
     }
 }
@@ -158,23 +164,24 @@
     justify-content: center;
     align-items: center;
     display: block;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     border: none;
     background-color: transparent;
     cursor: pointer;
+    fill: var(--primary-bg);
 }
 
 .modal-close-vector {
-    height: 11px;
-    width: 11px;
+    height: 20px;
+    width: 20px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close:hover>.modal-close-vector,
 .modal-close:focus>.modal-close-vector {
-    fill: var(--accent-color);
+    fill: var(--btn-hover-color-accent);
 }
 
 
