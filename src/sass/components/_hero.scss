@@ -10,16 +10,16 @@
   @media screen and (min-width: 768px) {
     padding-top: 102px;
     padding-bottom: 16px;
-    overflow-x: visible;
+    overflow: visible;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 147px;
     padding-bottom: 60px;
-    overflow-x: visible;
   }
 }
 
 // ---------- hero__box-one ----------
+
 .hero__box-one {
   position: relative;
   z-index: 10;
@@ -40,38 +40,30 @@
   max-width: 220px;
 
   font-family: var(--font-title);
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
+  @include fonts(400, 26px, 1.15, 0.04em);
   text-transform: uppercase;
   color: var(--primary-bg);
 
   @media screen and (min-width: 768px) {
     max-width: 170px;
 
-    font-size: 22px;
-    line-height: 1.14;
+    @include fonts(null, 22px, 1.14, null);
   }
   @media screen and (min-width: 1280px) {
     max-width: 280px;
 
-    font-size: 38px;
-    line-height: 1.16;
+    @include fonts(null, 38px, 1.16, null);
   }
 
   &--red {
-    font-size: 48px;
-    line-height: 0.96;
+    @include fonts(null, 48px, 0.96, null);
     color: var(--section-title-color);
 
     @media screen and (min-width: 768px) {
-      font-size: 34px;
-      line-height: 0.91;
+      @include fonts(null, 34px, 0.91, null);
     }
     @media screen and (min-width: 1280px) {
-      font-size: 58px;
-      line-height: 0.9;
+      @include fonts(null, 58px, 0.9, null);
     }
   }
 }
@@ -95,8 +87,7 @@
     background-color: var(--primary-bg);
     border-radius: 20px;
 
-    font-size: 8px;
-    line-height: 1.25;
+    @include fonts(400, 8px, 1.25, null);
     color: var(--primary-bg);
 
     transition-property: background-color;
@@ -104,8 +95,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 1280px) {
-      font-size: 14px;
-      line-height: 1.29;
+      @include fonts(null, 14px, 1.29, null);
 
       min-width: 107px;
       min-height: 40px;
@@ -149,14 +139,12 @@
 }
 .product-box__text {
   margin-bottom: 7px;
-  font-size: 8px;
-  line-height: 1.5;
+  @include fonts(400, 8px, 1.5, null);
   color: var(--primary-bg);
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 20px;
-    font-size: 14px;
-    line-height: 1.4;
+    @include fonts(null, 14px, 1.4, null);
   }
 }
 .product-box__btn {
@@ -196,6 +184,7 @@
 }
 
 // ---------- hero__box-two ----------
+
 .hero__box-two {
   position: absolute;
   bottom: 0;
@@ -241,6 +230,7 @@
 }
 
 // ---------- hero__box-three ----------
+
 .hero__box-three {
   @media screen and (max-width: 767px) {
     display: none;
@@ -300,25 +290,84 @@
 .retail__text {
   position: relative;
   z-index: 10;
-  font-size: 8px;
-  line-height: 1.25;
+  @include fonts(400, 8px, 1.25, null);
   text-align: right;
   color: var(--primary-bg);
 
   @media screen and (min-width: 1280px) {
-    font-size: 14px;
-    line-height: 1.29;
+    @include fonts(null, 14px, 1.29, null);
   }
 }
 .retail__number {
   font-family: var(--font-title);
-  font-size: 28px;
-  line-height: 1.14;
-  letter-spacing: 0.04em;
+  @include fonts(400, 28px, 1.14, 0.04em);
   color: var(--section-title-color);
 
   @media screen and (min-width: 1280px) {
     font-size: 46px;
     line-height: 1.15;
+  }
+}
+
+// ---------- animations ----------
+
+.hero__box-two::before {
+  animation-name: circle;
+  animation-duration: 750ms;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+@keyframes circle {
+  0% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hero__image {
+  animation-name: ice-cream;
+  animation-duration: 750ms;
+  animation-timing-function: ease-in;
+}
+@keyframes ice-cream {
+  0% {
+    opacity: 0;
+    z-index: 20;
+    transform: scale(1.5);
+  }
+  50% {
+    opacity: 0;
+    z-index: 20;
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.retail__image {
+  animation-name: tasty;
+  animation-duration: 1500ms;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+@keyframes tasty {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  25% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
