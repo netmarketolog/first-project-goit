@@ -5,12 +5,11 @@
   position: relative;
   padding-top: 194px;
   padding-bottom: 158px;
-  overflow-x: hidden;
+  overflow: hidden;
 
   @media screen and (min-width: 768px) {
     padding-top: 102px;
     padding-bottom: 16px;
-    overflow: visible;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 147px;
@@ -349,25 +348,38 @@
 
 .retail__image {
   animation-name: tasty;
-  animation-duration: 1500ms;
+  animation-duration: 1000ms;
   animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 @keyframes tasty {
   0% {
     opacity: 0;
-    transform: scale(0.5);
-  }
-  25% {
-    opacity: 0;
-    transform: scale(0.5);
+    transform-origin: bottom center;
+    transform: perspective(400px) rotateX(90deg);
   }
   50% {
-    transform: scale(0.5);
-  }
-  75% {
-    transform: scale(1.2);
+    transform-origin: bottom center;
+    transform: perspective(400px) rotateX(90deg);
   }
   100% {
-    transform: scale(1);
+    transform-origin: bottom center;
+    transform: perspective(400px) rotateX(0deg);
+  }
+}
+
+.retail__item {
+  animation-name: cafe;
+  animation-duration: 1000ms;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+@keyframes cafe {
+  0% {
+    opacity: 0;
+    transform-origin: top right;
+    transform: rotate(180deg);
+  }
+  100% {
+    transform-origin: top right;
+    transform: rotate(0deg);
   }
 }
