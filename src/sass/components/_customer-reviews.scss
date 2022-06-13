@@ -1,85 +1,147 @@
-.customer-reviews {
-  padding-top: 80px;
-  padding-bottom: 40px;
+.reviews {
+  padding: 40px 0;
 }
 
-.reviews__item {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 32px;
 }
 
-.reviews__body {
-  margin-top: 32px;
-  height: auto;
-  &::before {
-    content: '';
-    position: absolute;
-    top: 145px;
-    left: 70px;
-    width: 54px;
-    height: 40px;
-     // background-image: url(./../images/paws.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    border: none;
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+  opacity: 1;
+  transition: transform 300ms ease-in;
+}
+
+.swiper-pagination-bullet-active {
+  width: 12.4px;
+  height: 11.84px;
+  background-color: transparent;
+  border-radius: unset;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('./../images/mobile/home.png');
+  transform: scale(1.3);
+}
+
+.reviews__photo {
+  margin: 0 auto 32px;
+  @media screen and(min-width: 768px) {
+    margin-bottom: 20px;
+  }
+  @media screen and(min-width: 1280px) {
+    margin-bottom: 16px;
   }
 }
 
-.reviews__block {
-  padding: 43px 58px 26px 65px;
-  margin-bottom: 36px;
+.description {
+  margin: 0 auto 36px;
+  padding: 43px 50px 21px 50px;
+  max-width: 100%;
+  position: relative;
   background-color: #fafafa;
-}
-
-.reviews__text {
-  position: relative;
-  @include fonts(500, 12px, 2.5, null);
-  text-align: center;
-  color: #000000;
-  padding: 0 20px;
-  background: repeating-linear-gradient(
-    transparent 0px,
-    transparent 27px,
-    #e1e1e1 27px,
-    #e1e1e1 28px,
-    transparent 28px,
-    transparent 30px
-  );
-}
-.reviews__nameplace {
-  position: relative;
-}
-
-.reviews__name {
-  line-height: 1.86;
-  display: flex;
-  justify-content: center;
-  color: #000000;
-  &::before {
-    content: '';
-    position: absolute;
-    width: 32px;
-    height: 4px;
-    top: -16px;
-    border: none;
-     //background-image: url(./../images/dots.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+  @media screen and(min-width: 320px) {
+    min-width: 280px;
   }
-  &::after {
-    content: '';
-    position: absolute;
-    width: 73px;
-    height: 12px;
-    top: 48px;
-    border: none;
-    // background-image: url(./../images/house-dots.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+  @media screen and(min-width: 768px) {
+    max-width: 620px;
+    padding: 37px 6px 36px 6px;
+    margin-bottom: 24px;
+  }
+  @media screen and(min-width: 1280px) {
+    max-width: 1034px;
+    padding: 47px 106px 31px 106px;
+    margin-bottom: 36px;
+  }
+}
+
+.description::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 53px;
+  width: 54px;
+  height: 40px;
+  background-size: contain;
+  background-image: url('./../images/mobile/paws.png');
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('./../images/mobile/paws@x2.png');
+  }
+  @media screen and (min-width: 768px) {
+    top: 20px;
+    left: 6px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 32px;
+    left: 105px;
+  }
+}
+
+.description__wrapper {
+  padding: 0 8px 5px 15px;
+  background: repeating-linear-gradient(
+    #fafafa,
+    #fafafa 30px,
+    #e1e1e1 30px,
+    #e1e1e1 31px
+  );
+  @media screen and (min-width: 768px) {
+    padding-left: 45px;
+    padding-right: 49px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 36px;
+    padding-right: 35px;
+    padding-bottom: 8px;
+  }
+}
+
+.description__text {
+  position: relative;
+  z-index: 50;
+  text-align: center;
+  @include fonts(null, 12px, 2.55, null);
+  @media screen and(min-width: 768px) {
+    @include fonts(null, 14px, 2.16, null);
+  }
+  @media screen and(min-width: 1280px) {
+    @include fonts(null, 16px, 1.86, 0.04em);
+  }
+}
+
+.description__name {
+  position: relative;
+  text-align: center;
+  margin-bottom: 16px;
+  @include fonts(null, 14px, 1.86, null);
+  @media screen and(min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  @media screen and(min-width: 1280px) {
+    font-size: 20px;
+  }
+}
+
+.description__name::after {
+  content: '';
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('./../images/mobile/dots-reviews.png');
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('./../images/mobile/dots-reviewsx2.png');
   }
 }
