@@ -1,6 +1,6 @@
 .adv__section {
   background-color: #fff5f6;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 40px;
   @media screen and (min-width: 768px) {
     padding-top: 40px;
@@ -112,40 +112,29 @@
 }
 
 .advantages__text {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 170%;
+  @include fonts(700, 12px, 1.67, null);
   color: #000000;
   @media screen and (min-width: 768px) {
-    font-size: 14px;
-    line-height: 174%;
+    @include fonts(null, 14px, 1.71, null);
   }
   @media screen and (min-width: 1280px) {
-    font-size: 16px;
-    line-height: 176%;
-    letter-spacing: 0.02em;
+    @include fonts(null, 16px, 1.75, 0.02em);
   }
 }
 
 .advantages__label {
   display: inline-block;
   font-family: 'Titan One';
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1.14;
-  letter-spacing: 0.04em;
+  @include fonts(400, 36px, 1.14, 0.04em);
   color: #d41443;
   margin-bottom: 20px;
   @media screen and (min-width: 768px) {
     margin-bottom: 13px;
-    font-size: 48px;
-    line-height: 1.15;
+    @include fonts(null, 48px, 1.15, null);
   }
   @media screen and (min-width: 1280px) {
-    margin-bottom: 16px;
-    font-size: 58px;
-    line-height: 1.14;
+    @include fonts(null, 58px, 1.14, null);
     text-align: right;
-    letter-spacing: 0.04em;
+    margin-bottom: 16px;
   }
 }
