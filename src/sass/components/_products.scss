@@ -2,22 +2,26 @@
     padding-top: 80px;
     padding-bottom: 40px;
     @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: center;
-        align-item: center;
-        padding: 40px 32px 60px 32px;
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+}
+.products__list {
+    @media screen and (min-width: 768px){
+    display: flex;
+    gap: 16px;
     }
 }
 .products__text-main {
     margin-bottom: 15px;
-    font-family: 'Titan One';
+    font-family: var(--font-title);
     @include fonts(400, 18px, 1.17, null);
     // font-weight: 400;
     // font-size: 18px;
     // line-height: 1.17;
     text-align: center;
     text-transform: uppercase;
-    color: #FFA5BA;
+    color: var(--circle-bg);
     @media screen and (min-width: 768px){
         margin-bottom: 18px;
         font-size: 26px;
@@ -27,7 +31,7 @@
 
 .products__title {
     margin-bottom: 8px;
-    font-family: 'Titan One';
+    font-family: var(--font-title);
     @include fonts(400, 34px, 1.15, 0.04em);
     // font-weight: 400;
     // font-size: 34px;
@@ -35,7 +39,7 @@
     text-align: center;
     // letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #D41443;
+    color: var(--section-title-color);
     @media screen and (min-width: 768px) {
         margin-bottom: 16px;
         font-size: 48px;
@@ -46,18 +50,20 @@
     position: relative;
     margin-top: 140px;
     padding: 160px 40px 40px 40px;
-    background-color: #FFB8CA;
+    background-color: var(--hero-bg-primary);
     border-radius: 24px;
     @media screen and (min-width: 768px) {
         margin-top: 138px;
-        padding: 86px 320px 40px 32px;
+        padding-top: 118px; 
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }
 .products__item--bez{
-    background-color: #F0D1A5;
+    background-color: var(--products-coffee-col);
 }
 .products__item--green{
-    background-color: #C2E297;  
+    background-color: var(--products-shakes-col);  
 }
 
 .products__item::before {
@@ -79,6 +85,7 @@
     transform: translate(-50%, -50%);
 
     @media screen and (min-width: 768px) {
+        content: '';
         width: 224px;
         height: 224px;
         background-image: url(../images/tablet/icecream-products-t.png);
@@ -87,6 +94,7 @@
             (min-resolution: 2dppx) {
                 background-image: url(../images/tablet/icecream-products-t@2x.png);
             }
+        transform: translate(-50%, -138px);    
         }
 }
 .products__item--bez::before{
@@ -97,15 +105,12 @@
         background-image: url(../images/mobile/icecoffe-products-m@2x.png);
     }
     @media screen and (min-width: 768px) {
-        width: 224px;
-        height: 224px;
         background-image: url(../images/tablet/icecoffe-products-t.png);
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: url(../images/tablet/icecoffe-products-t@2x.png);
             }
-
 }
 }
 .products__item--green::before {
@@ -115,22 +120,20 @@
     (min-resolution: 2dppx) {
         background-image: url(../images/mobile/milkshakes-products-m@2x.png);
     }
-        @media screen and (min-width: 768px) {
-            width: 224px;
-            height: 224px;
-            background-image: url(../images/tablet/milkshakes-products-t.png);
-            @media (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                    background-image: url(../images/tablet/milkshakes-products-t@2x.png);
-                }
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/tablet/milkshakes-products-t.png);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/tablet/milkshakes-products-t@2x.png);
+            }
 }
 }
 
 .products__subtitle {
     position: relative;
     margin-bottom: 70px;
-    font-family: 'Titan One';
+    font-family: var(--font-title);
     @include fonts(400, 20px, 1.15, 0.04em);
     // font-weight: 400;
     // font-size: 20px;
@@ -138,7 +141,7 @@
     text-align: center;
     // letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--primary-bg);
 }
 
 .products__subtitle::after {
@@ -168,7 +171,7 @@
     // line-height: 1.52;
     text-align: center;
     // letter-spacing: 0.04em;
-    color: #FFFFFF;
+    color: var(--primary-bg);
 }
 
 .products__btn {
