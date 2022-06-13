@@ -108,6 +108,13 @@
     }
 }
 
+.menu-close__icon{
+    fill: var(--primary-bg);
+    &:hover, &:focus{
+        fill: var(--section-title-color);
+    }
+}
+
 .button__order {
     padding: 11px 0px;
     display: inline-block;
