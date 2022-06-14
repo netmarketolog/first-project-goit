@@ -78,9 +78,7 @@
 }
 
 .contacts__buttons {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
+    
     border-radius: 22px;
     display: flex;
     flex-direction: column;
@@ -121,6 +119,7 @@
 }
 
 .contacts__button--locations {
+    @include fonts(700, 16px, 1.31, null);
     width: 161.45px;
     height: 44px;
     border-radius: 22px;
@@ -143,6 +142,7 @@
 }
 
 .contacts__button--franchise {
+    @include fonts(700, 16px, 1.31, null);
     width: 161px;
     height: 44px;
     border-radius: 22px;

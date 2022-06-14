@@ -2,13 +2,20 @@
 .about{
     background-image: url(../images/mobile/about-milk-left-m.png),
     url(../images/mobile/about-milk-right-m.png);
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/mobile/bg-left-about-m@2x.png),
+                url(../images/mobile/bg-right-about-m@2x.png);
+        }
+
     background-position:left 78%, 100% 80% ;
-    
+    background-size: 133px;
     background-repeat: no-repeat;
     background-color: var(--secondary-bg);
     padding-top: 60px;
     @media screen and (min-width: 390px){
-        background-position: left 86%, 100% 85%;
+        background-position: left 84%, 100% 85%;
     }
 @media screen and (min-width: 768px) {
         padding-top: 20px;
@@ -17,8 +24,14 @@
         @media screen and (min-width: 1280px) {
             background-image: url(../images/desktop/bg-about-left-d.png),
                     url(../images/desktop/bg-about-right-d.png);
-                background-position: left 120%, 100% 120%;
-            
+                    @media (min-device-pixel-ratio: 2),
+                        (min-resolution: 192dpi),
+                        (min-resolution: 2dppx) {
+                            background-image: url(../images/desktop/bg-left-about-d@2x.png),
+                        url(../images/desktop/bg-right-about-d@2x.png) ;
+                        }
+                background-position: left 120%, 100% 109%;
+            background-size: 521px;
                 background-repeat: no-repeat;
             padding-top: 60px;
         }
