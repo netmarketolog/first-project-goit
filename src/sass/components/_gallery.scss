@@ -1,7 +1,31 @@
 .section__gallery {
+  margin-bottom: 30px;
   background-image: linear-gradient(to top, #ffffff 57%, #fff5f6 43%);
 }
 
-.gallery__img {
-  width: 100%;
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__thumb {
+    margin: 0;
+    cursor: pointer;
+  }
+  &__thumb-margin {
+    margin-bottom: 60px;
+  }
+
+  &__image {
+    top: 0;
+    left: 0;
+    display: block;
+    transition: 0.3s;
+    border: 1px solid transparent;
+    border-radius: 18px;
+
+    &:active {
+      transform: scale(2.5);
+    }
+  }
 }
