@@ -1,6 +1,6 @@
 .scroll-up {
   position: fixed;
-  left: 40px;
+  right: 40px;
   bottom: 40px;
   z-index: 1000;
 
@@ -16,7 +16,7 @@
   cursor: pointer;
   visibility: hidden;
   border-radius: 50%;
-  box-shadow: inset 0 0 0 4px;
+  box-shadow: inset 0 0 0 3px;
   opacity: 0;
   transform: translateY(20px);
 
@@ -27,10 +27,6 @@
 .scroll-up:hover,
 .scroll-up:focus {
   fill: var(--btn-hover-color-accent);
-}
-.scroll-up:hover .scroll-up__sircle-path,
-.scroll-up:focus .scroll-up__sircle-path {
-  stroke: var(--btn-hover-color-accent);
 }
 .scroll-up__icon {
   position: absolute;
