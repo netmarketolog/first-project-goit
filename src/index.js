@@ -23,6 +23,8 @@
         openModalBtn: document.querySelector(".tab-button__order"),
         closeModalBtn: document.querySelector(".modal-button"),
         modal: document.querySelector(".modal-one"),
+        body: document.querySelector('body')
+
     };
 
     refs.openModalBtn.addEventListener("click", toggleModal);
