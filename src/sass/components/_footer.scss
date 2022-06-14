@@ -89,7 +89,7 @@
         @media screen and(min-width: 1280px) {
             margin-bottom: 50px;
         }
-        &__item {
+        &__item + &__item{
         margin-left: 25px;
     }
         &__link {
@@ -101,6 +101,7 @@
         height: 32px;
         border-radius: 50%;
         background-color: #fea5bb;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1);  
         animation: social-icon-anime 2000ms infinite 750ms;
         @media screen and(min-width: 768px) {
             width: 34px;
@@ -108,9 +109,10 @@
         }
        }
         &__link:hover,
-        &__ink:focus {
+        &__link:focus {
         background-color: #d41443;
         transform: scale(1.2);
+
     }
         &__icon {
         fill: inherit;
@@ -122,6 +124,8 @@
         @include fonts(700, 12px, 1.86, null);
         font-style: normal;
         color: #000000;
+        transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+
         @media screen and(min-width: 768px) {
             font-size: 14px;
         }
