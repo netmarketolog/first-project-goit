@@ -15,17 +15,37 @@
     }
 })();
 
-////////// скрипт до модалки //////////
+
+
+
 (() => {
     const refs = {
         openModalBtn: document.querySelector(".tab-button__order"),
-        closeModalBtn: document.querySelector("[data-modal-close]"),
-        modal: document.querySelector("[data-modal]"),
+        closeModalBtn: document.querySelector(".modal-button"),
+        modal: document.querySelector(".modal-one"),
     };
+
     refs.openModalBtn.addEventListener("click", toggleModal);
     refs.closeModalBtn.addEventListener("click", toggleModal);
 
     function toggleModal() {
+        document.body.classList.toggle("no-scroll");
         refs.modal.classList.toggle("is-hidden");
     }
 })();
+
+// (() => {
+//     const refs = {
+//         openModalBtn: document.querySelector(".button__order"),
+//         closeModalBtn: document.querySelector(".modal-button"),
+//         modal: document.querySelector(".modal-one"),
+//     };
+
+//     refs.openModalBtn.addEventListener("click", toggleModal);
+//     refs.closeModalBtn.addEventListener("click", toggleModal);
+
+//     function toggleModal() {
+//         document.body.classList.toggle("no-scroll");
+//         refs.modal.classList.toggle("is-hidden");
+//     }
+// })();
