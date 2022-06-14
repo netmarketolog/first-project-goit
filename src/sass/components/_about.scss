@@ -8,7 +8,7 @@
     background-color: var(--secondary-bg);
     padding-top: 60px;
     @media screen and (min-width: 390px){
-        background-position: left 84%, 100% 85%;
+        background-position: left 86%, 100% 85%;
     }
 @media screen and (min-width: 768px) {
         padding-top: 20px;
@@ -58,6 +58,7 @@
     text-transform: uppercase;
     @media screen and (min-width: 768px) {
             width: 100%;
+            margin-bottom: 40px;
             @include fonts(400, 48px, 1.1458, null);
         }
                 @media screen and (min-width: 1280px) {
@@ -66,13 +67,19 @@
                     @include fonts(400, 58px, 1.1379, null);
                 }
 }
-
+.about__p{
+   margin-top: 40px; 
+@media screen and (min-width: 768px){
+    margin-top: 0;
+}
+}
 .about__text {
     width: 220px;
+   
     color: var(--primary-text-color);
     @include fonts(null, 12px, 1.5833, null);
     text-align: left;
-    margin-top: 40px;
+   
     @media screen and (min-width: 390px){
         width: 100%;
     }
@@ -84,7 +91,7 @@
  @media screen and (min-width: 1280px) {
      width: 463px;
     @include fonts(null, 16px, 1.75, null);
-     margin-top: 32px;
+     
  }
  &--black{
     color: var(--secondary-text-color);
@@ -93,6 +100,9 @@
         }
    
 }
+}
+.about__text:not(:first-child) {
+    margin-top: 26px;;
 }
 
 .about__content{
