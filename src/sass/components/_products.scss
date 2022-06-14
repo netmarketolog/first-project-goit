@@ -1,14 +1,11 @@
-.products__container{
-    padding-top: 80px;
-    padding-bottom: 40px;
+.products{
+    padding: 80px 0 40px 0;
     @media screen and (min-width: 768px) {
         padding-top: 40px;
         padding-bottom: 60px;
     }
     @media screen and (min-width: 1280px) {
         padding-top: 60px;
-        padding-left: 16px;
-        padding-right: 16px;
     }
 }
 .products__list {
@@ -24,9 +21,6 @@
     margin-bottom: 15px;
     font-family: var(--font-title);
     @include fonts(400, 18px, 1.17, null);
-    // font-weight: 400;
-    // font-size: 18px;
-    // line-height: 1.17;
     text-align: center;
     text-transform: uppercase;
     color: var(--circle-bg);
@@ -43,50 +37,52 @@
 }
 
 .products__title {
-    margin-bottom: 8px;
+    margin-bottom: 148px;
     font-family: var(--font-title);
     @include fonts(400, 34px, 1.15, 0.04em);
-    // font-weight: 400;
-    // font-size: 34px;
-    // line-height: 1.15;
     text-align: center;
-    // letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--section-title-color);
     @media screen and (min-width: 768px) {
-        margin-bottom: 16px;
+        margin-bottom: 154px;
         font-size: 48px;
     }
-     @media screen and (min-width: 768px){
-        margin-bottom: 18px;
-        font-size: 26px;
-        line-height: 1.15;
-    }
     @media screen and (min-width: 1280px){
-        margin-bottom: 0;
+        margin-bottom: 261px;
         font-size: 58px;
         line-height: 1.14;
         letter-spacing: 0.06em;
     }
-}
+}    
 
 .products__item {
     position: relative;
-    margin-top: 140px;
+    // margin-top: 140px;
     padding: 160px 40px 40px 40px;
     background-color: var(--hero-bg-primary);
     border-radius: 24px;
+    @media screen and (min-width: 320px) and (max-width: 767px){
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     @media screen and (min-width: 768px) {
-        margin-top: 138px;
+        // margin-top: 138px;
         padding-top: 118px; 
         padding-left: 32px;
         padding-right: 32px;
     }
     @media screen and (min-width: 1280px) {
-        margin-top: 261px;
+        // margin-top: 261px;
         padding: 165px 75px 60px 75px;
     }
+    &:not(:first-child) {
+        @media screen and (min-width: 320px) and (max-width: 767px){
+        margin-top: 140px;
+    }
+   }
 }
+
 .products__item--bez{
     background-color: var(--products-coffee-col);
 }
@@ -211,6 +207,7 @@
     position: absolute;
     content: '';
     background-image: url(../images/points-products.png);
+    background-size: cover;
     background-repeat: no-repeat;
     width: 26px;
     height: 6px;
