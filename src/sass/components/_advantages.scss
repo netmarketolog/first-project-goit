@@ -13,6 +13,7 @@
 
 .advantages {
   @media screen and (min-width: 768px) {
+    justify-content: space-between;
     display: flex;
   }
 }
@@ -26,16 +27,16 @@
   }
   @media screen and (min-width: 768px) {
     width: 156px;
-    &:not(:last-child) {
-      margin-right: 28px;
-    }
+    // &:not(:last-child) {
+    //   margin-right: 28px;
+    // }
   }
   @media screen and (min-width: 1280px) {
     width: 266px;
-    &:not(:last-child) {
-      margin-right: 160px;
-    }
-    // gap: 160px;
+    justify-content: space-between;
+    // &:not(:last-child) {
+    //   margin-right: 160px;
+    // }
   }
 }
 
