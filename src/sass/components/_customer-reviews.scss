@@ -120,6 +120,9 @@
   @media screen and(min-width: 1280px) {
     @include fonts(null, 16px, 1.86, null);
   }
+  & span {
+    display: inline-block;
+  }
 }
 
 .reviews__name {
