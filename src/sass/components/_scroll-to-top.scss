@@ -1,0 +1,54 @@
+.scroll-up {
+  position: fixed;
+  left: 40px;
+  bottom: 40px;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+  color: var(--btn-hover-color);
+  fill: var(--btn-hover-color);
+
+  cursor: pointer;
+  visibility: hidden;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 4px;
+  opacity: 0;
+  transform: translateY(20px);
+
+  transition-property: fill, opacity, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.scroll-up:hover,
+.scroll-up:focus {
+  fill: var(--btn-hover-color-accent);
+}
+.scroll-up:hover .scroll-up__sircle-path,
+.scroll-up:focus .scroll-up__sircle-path {
+  stroke: var(--btn-hover-color-accent);
+}
+.scroll-up__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 20px;
+  height: 20px;
+}
+.scroll-up--active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.scroll-up__sircle-path {
+  fill: none;
+  stroke: rgba(199, 19, 61, 0.4);
+  stroke-width: 4px;
+  transition: 250ms;
+}
