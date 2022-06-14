@@ -23,6 +23,10 @@
   transition-property: fill, opacity, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1280px) {
+    width: 60px;
+    height: 60px;
+  }
 }
 .scroll-up:hover,
 .scroll-up:focus {
@@ -36,6 +40,11 @@
 
   width: 20px;
   height: 20px;
+
+  @media screen and (min-width: 1280px) {
+    width: 30px;
+    height: 30px;
+  }
 }
 .scroll-up--active {
   visibility: visible;
@@ -46,5 +55,4 @@
   fill: none;
   stroke: var(--section-title-color);
   stroke-width: 4px;
-  transition: 250ms;
 }
