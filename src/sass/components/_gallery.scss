@@ -1,7 +1,40 @@
 .section__gallery {
   background-image: linear-gradient(to top, #ffffff 57%, #fff5f6 43%);
 }
+.img-margin {
+  margin-bottom: 60px;
+  @media screen and (max-width: 420px) {
+    margin-bottom: 15px;
+  }
+  @media screen and (max-width: 780px) and (min-width: 420px) {
+    margin-bottom: 15px;
+  }
+}
 
-.gallery__img {
-  width: 100%;
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__thumb {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  &__image {
+    display: block;
+    transition-duration: 0.5s;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    @media screen and (max-width: 420px) {
+      border-radius: 8px;
+    }
+    @media screen and (max-width: 780px) and (min-width: 420px) {
+      border-radius: 8px;
+    }
+
+    &:hover {
+      transform: scale(1.9);
+    }
+  }
 }
