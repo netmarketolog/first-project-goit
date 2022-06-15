@@ -3,12 +3,12 @@
   position: relative;
   width: 100%;
   // z-index: 1;
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     padding-top: 32px;
     position: absolute;
     width: 100%;
   }
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 37px;
   }
 }
@@ -22,7 +22,7 @@
   @include fonts(null, 26px, 1.15, null);
   text-transform: uppercase;
   color: var(--section-title-color);
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     padding: 0px;
   }
 }
@@ -50,13 +50,13 @@
   margin-left: auto;
   background-color: transparent;
   border: none;
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     margin-right: 32px;
     position: absolute;
     left: 524px;
     z-index: 1;
   }
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }
@@ -67,11 +67,11 @@
   display: flex;
   position: relative;
   z-index: 20;
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     padding-left: 32px;
     padding-right: 32px;
   }
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     justify-content: space-between;
     align-items: normal;
     padding-left: 16px;
@@ -79,7 +79,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media screen and (max-width: 1279px) {
   .mob-menu {
     position: absolute;
     position: fixed;
@@ -95,13 +95,13 @@
     opacity: 0;
     transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
       opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
       width: 40%;
     }
   }
 }
 
-@media (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .mob-menu {
     position: absolute;
   }
@@ -123,8 +123,24 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     display: none;
+  }
+}
+
+.menu-open__icon {
+  width: 20px;
+  height: 20px;
+
+  fill: var(--section-title-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--btn-hover-color-accent);
   }
 }
 
@@ -154,14 +170,14 @@
   background-color: var(--primary-bg);
   color: var(--section-title-color);
   margin: 60px 20px 20px 19px;
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }
 
 // .tab-button__order {
 //     display: none;
-//     @media (min-width: 768px) {
+//     @media screen and (min-width: 768px) {
 //         padding: 11px 0px;
 //         display: inline-block;
 //         border: 0;
@@ -174,7 +190,7 @@
 //         background-color: var(--primary-bg);
 //         color: var(--section-title-color);
 //     }
-//     @media (min-width: 1280px) {
+//     @media screen and (min-width: 1280px) {
 //         display: none;
 //     }
 // }
@@ -189,7 +205,7 @@
   &:focus {
     background-color: var(--btn-hover-color);
   }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     padding: 11px 0px;
     display: inline-block;
     border: 0;
@@ -202,7 +218,7 @@
     background-color: var(--primary-bg);
     color: var(--section-title-color);
   }
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     height: 44px;
     padding: 11px 0px;
     display: inline-block;
@@ -225,13 +241,13 @@
 .site-nav__item {
   border-top: 1px solid #e18298;
   border-bottom: 1px solid #e18298;
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     border: none;
   }
 }
 
 .site-nav__list {
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     min-width: 541px;
     position: absolute;
     z-index: 1;
@@ -258,7 +274,7 @@
   align-items: center;
   color: var(--primary-bg);
   padding-left: 20px;
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     @include fonts(null, 16px, 1.31, null);
     padding-left: 0px;
   }
