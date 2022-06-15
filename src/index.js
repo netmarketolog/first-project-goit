@@ -21,12 +21,14 @@
 (() => {
     const refs = {
         openModalBtn: document.querySelector(".tab-button__order"),
+        openModalMobileBtn: document.querySelector(".button__order"),
         closeModalBtn: document.querySelector(".modal-button"),
         modal: document.querySelector(".modal-one"),
         body: document.querySelector('body')
 
     };
 
+    refs.openModalMobileBtn.addEventListener("click", toggleModal);
     refs.openModalBtn.addEventListener("click", toggleModal);
     refs.closeModalBtn.addEventListener("click", toggleModal);
 
@@ -38,12 +40,14 @@
 
 // (() => {
 //     const refs = {
-//         openModalBtn: document.querySelector(".button__order"),
+//         openModalTwoBtn: document.querySelector(".button__submit"),
 //         closeModalBtn: document.querySelector(".modal-button"),
-//         modal: document.querySelector(".modal-one"),
+//         modal: document.querySelector(".modal-two"),
+//         body: document.querySelector('body')
+
 //     };
 
-//     refs.openModalBtn.addEventListener("click", toggleModal);
+//     refs.openModalTwoBtn.addEventListener("click", toggleModal);
 //     refs.closeModalBtn.addEventListener("click", toggleModal);
 
 //     function toggleModal() {
@@ -51,3 +55,5 @@
 //         refs.modal.classList.toggle("is-hidden");
 //     }
 // })();
+
+
