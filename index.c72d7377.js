@@ -1,0 +1,2 @@
+function animateValue(e,a,n,t){var o=null,m=function(u){o||(o=u);var i=Math.min((u-o)/t,1);e.innerHTML=Math.floor(i*(n-a)+a),i<1&&window.requestAnimationFrame(m)};window.requestAnimationFrame(m)}var obj=document.getElementById("value1");animateValue(obj,0,721,4e3);var obj2=document.getElementById("value2");animateValue(obj2,0,16,4e3);var obj3=document.getElementById("value3");animateValue(obj3,0,84,4e3);
+//# sourceMappingURL=index.c72d7377.js.map
