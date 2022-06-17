@@ -2,39 +2,40 @@
   <div class="container">
     <h2 class="visually-hidden">gallery</h2>
     <div class="gallery">
-      <picture>
-        <source
-          srcset="
-            ./images/gallery/desktop/img-1-d.png   1x,
-            ./images/gallery/desktop/img-1-d2x.png 2x
-          "
-          media="(min-width:1280px)"
-          type="image/png"
-        />
-        <source
-          srcset="
-            ./images/gallery/tablet/img-1-t.png   1x,
-            ./images/gallery/tablet/img-1-t2x.png 2x
-          "
-          media="(min-width:768px)"
-          type="image/png"
-        />
-        <source
-          srcset="
-            ./images/gallery/mobile/img-1-m.png   1x,
-            ./images/gallery/mobile/img-1-m2x.png 2x
-          "
-          media="(max-width:767px)"
-          type="image/png"
-        />
-        <img
-          loading="lazy"
-          src="images/gallery/mobile/img-1-m.png"
-          alt="ice cream"
-          class="gallery__image"
-        />
-      </picture>
-
+      <div>
+        <picture>
+          <source
+            srcset="
+              ./images/gallery/desktop/img-1-d.png   1x,
+              ./images/gallery/desktop/img-1-d2x.png 2x
+            "
+            media="(min-width:1280px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/gallery/tablet/img-1-t.png   1x,
+              ./images/gallery/tablet/img-1-t2x.png 2x
+            "
+            media="(min-width:768px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/gallery/mobile/img-1-m.png   1x,
+              ./images/gallery/mobile/img-1-m2x.png 2x
+            "
+            media="(max-width:767px)"
+            type="image/png"
+          />
+          <img
+            loading="lazy"
+            src="images/gallery/mobile/img-1-m.png"
+            alt="ice cream"
+            class="gallery__image"
+          />
+        </picture>
+      </div>
       <div>
         <picture>
           <source
@@ -305,7 +306,7 @@
           />
         </picture>
       </div>
-
+      <div>
       <picture>
         <source
           srcset="
@@ -338,6 +339,7 @@
           class="gallery__image"
         />
       </picture>
+      </div>
     </div>
   </div>
 </section>

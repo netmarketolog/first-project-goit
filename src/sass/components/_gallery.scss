@@ -34,7 +34,15 @@
     }
 
     &:hover {
-      transform: scale(1.9);
+      @media (min-width: 320px) {
+          transform: scale(1.4);
+      }
+      @media (min-width: 768px) {
+        transform: scale(1.6);
+      }
+      @media (min-width: 1280px) {
+        transform: scale(1.8);
+      }
     }
   }
 }
