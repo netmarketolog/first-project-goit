@@ -16,6 +16,7 @@
 })();
 
 (() => {
+  // open modal
   const refs = {
     openModalBtn: document.querySelector('.tab-button__order'),
     openModalMobileBtn: document.querySelector('.button__order'),
