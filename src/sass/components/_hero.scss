@@ -137,13 +137,13 @@
   align-items: center;
 }
 .product-box__text {
-  max-width: 115px;
+  max-width: 118px;
 
   @include fonts(400, 8px, 1.5, null);
   color: var(--primary-bg);
 
   @media screen and (min-width: 1280px) {
-    max-width: 200px;
+    max-width: 203px;
 
     margin-bottom: 20px;
 
@@ -152,7 +152,7 @@
 }
 .product-box__buttons {
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   left: 150px;
 
   display: inline-flex;
@@ -181,8 +181,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: var(--btn-hover-color);
     fill: var(--btn-hover-color-accent);
   }
@@ -205,16 +204,17 @@
 }
 
 .slider {
-  width: 415px;
-  height: 216px;
+  width: 270px;
   overflow: hidden;
+
+  @media screen and (min-width: 1280px) {
+    width: 415px;
+  }
 }
 .slider-line {
-  width: 1245px;
-  display: flex;
   position: relative;
-  left: 0;
-  transition: all ease 1000ms;
+
+  transition: transform ease 1000ms;
 }
 
 // ---------- hero__box-two ----------

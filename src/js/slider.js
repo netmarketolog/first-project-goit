@@ -1,26 +1,42 @@
 refs = {
+  slider: document.querySelector('.slider'),
   sliderLine: document.querySelector('.slider-line'),
   btnLeft: document.querySelector('.product-box__btn--left'),
   btnRight: document.querySelector('.product-box__btn--right'),
 };
 
-let offset = 0;
+let count = 0;
+let sliderWidth;
+let sliderLength = refs.sliderLine.children.length;
 
 refs.btnLeft.addEventListener('click', onBtnLeft);
 refs.btnRight.addEventListener('click', onBtnRight);
 
+window.addEventListener('resize', init);
+init();
+
+function init() {
+  sliderWidth = refs.slider.offsetWidth;
+  refs.sliderLine.style.width = `${sliderWidth * sliderLength}px`;
+  browseSlider();
+}
+
 function onBtnLeft() {
-  offset -= 415;
-  if (offset < 0) {
-    offset = 830;
+  count -= 1;
+  if (count < 0) {
+    count = sliderLength - 1;
   }
-  refs.sliderLine.style.left = `-${offset}px`;
+  browseSlider();
 }
 
 function onBtnRight() {
-  offset += 415;
-  if (offset > 830) {
-    offset = 0;
+  count += 1;
+  if (count >= sliderLength) {
+    count = 0;
   }
-  refs.sliderLine.style.left = `-${offset}px`;
+  browseSlider();
+}
+
+function browseSlider() {
+  refs.sliderLine.style.transform = `translate(-${count * sliderWidth}px)`;
 }
