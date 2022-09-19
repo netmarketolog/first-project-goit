@@ -19,35 +19,108 @@
         </ul>
       </div>
       <div class="product-box">
-        <picture>
-          <source
-            srcset="
-              ./images/desktop/bioeco-hero-d.png    1x,
-              ./images/desktop/bioeco-hero-d@2x.png 2x
-            "
-            media="(min-width:1280px)"
-            type="image/png"
-          />
-          <source
-            srcset="
-              ./images/tablet/bioeco-hero-t.png    1x,
-              ./images/tablet/bioeco-hero-t@2x.png 2x
-            "
-            media="(min-width:768px)"
-            type="image/png"
-          />
-          <img
-            src="./images/tablet/bioeco-hero-t.png"
-            alt="jug of milk"
-            class="product-box__image"
-          />
-        </picture>
-        <div class="product-box__about">
-          <p class="product-box__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et
-          </p>
-          <button type="button" class="product-box__btn">
+        <div class="slider">
+          <ul class="product-box__list slider-line">
+            <li class="product-box__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/bioeco-hero-d.png    1x,
+                    ./images/desktop/bioeco-hero-d@2x.png 2x
+                  "
+                  media="(min-width:1280px)"
+                  type="image/png"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/bioeco-hero-t.png    1x,
+                    ./images/tablet/bioeco-hero-t@2x.png 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/png"
+                />
+                <img
+                  src="./images/tablet/bioeco-hero-t.png"
+                  alt="jug of milk"
+                  class="product-box__image"
+                />
+              </picture>
+              <p class="product-box__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et
+              </p>
+            </li>
+            <li class="product-box__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/coffee-hero-d.png    1x,
+                    ./images/desktop/coffee-hero-d@2x.png 2x
+                  "
+                  media="(min-width:1280px)"
+                  type="image/png"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/coffee-hero-t.png    1x,
+                    ./images/tablet/coffee-hero-t@2x.png 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/png"
+                />
+                <img
+                  src="./images/tablet/coffee-hero-t.png"
+                  alt="jug of milk"
+                  class="product-box__image"
+                />
+              </picture>
+              <p class="product-box__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis alias dignissimos quasi aliquid quae!
+              </p>
+            </li>
+            <li class="product-box__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/cocoa-hero-d.png    1x,
+                    ./images/desktop/cocoa-hero-d@2x.png 2x
+                  "
+                  media="(min-width:1280px)"
+                  type="image/png"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/cocoa-hero-t.png    1x,
+                    ./images/tablet/cocoa-hero-t@2x.png 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/png"
+                />
+                <img
+                  src="./images/tablet/cocoa-hero-t.png"
+                  alt="jug of milk"
+                  class="product-box__image"
+                />
+              </picture>
+              <p class="product-box__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                est amet sapiente nostrum, et iste praesentium veniam
+                dignissimos incidunt ut!
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="product-box__buttons">
+          <button type="button" class="product-box__btn product-box__btn--left">
+            <svg class="product-box__btn-icon product-box__btn-icon--left">
+              <use href="./images/symbol-defs-no.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+          <button
+            type="button"
+            class="product-box__btn product-box__btn--right"
+          >
             <svg class="product-box__btn-icon">
               <use href="./images/symbol-defs-no.svg#icon-arrow-right"></use>
             </svg>
