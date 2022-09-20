@@ -1,4 +1,4 @@
-refs = {
+const refs = {
   slider: document.querySelector('.slider'),
   sliderLine: document.querySelector('.slider-line'),
   btnLeft: document.querySelector('.product-box__btn--left'),
