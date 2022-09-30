@@ -1,46 +1,56 @@
 <div class="modal-one is-hidden">
-    <div class="modal-window">
-        <h2 class="modal-title">Leave your details, we will call you back</h2>
-        <button aria-label="Кнопка заказа товара" class="modal-button">
+  <div class="modal-window">
+    <h2 class="modal-title">Leave your details, we will call you back</h2>
+    <button aria-label="Кнопка заказа товара" class="modal-button">
       <svg class="modal-svg">
         <use
           href="./images/symbol-defs-withfill.svg#icon-close-black-18dp"
         ></use>
       </svg>
     </button>
-        <form id="order-form" class="modal-form" autocomplete="on">
-            <label for="modal-name" class="form-label">Name</label>
-            <div class="modal-container">
-                <input type="text" class="form-input" name="modal-name" id="modal-name" />
-                <svg class="modal-form-svg">
+    <form id="order-form" class="modal-form" autocomplete="on">
+      <label for="modal-name" class="form-label">Name</label>
+      <div class="modal-container">
+        <input
+          type="text"
+          class="form-input"
+          name="modal-name"
+          id="modal-name"
+        />
+        <svg class="modal-form-svg">
           <use href="./images/symbol-defs-withfill.svg#icon-person-black"></use>
         </svg>
-            </div>
-            <label for="modal-tel" class="form-label">Phone</label>
-            <div class="modal-container">
-                <input type="tel" class="form-input" name="modal-tel" id="modal-tel" />
-                <svg class="modal-form-svg">
+      </div>
+      <label for="modal-tel" class="form-label">Phone</label>
+      <div class="modal-container">
+        <input type="tel" class="form-input" name="modal-tel" id="modal-tel" />
+        <svg class="modal-form-svg">
           <use href="./images/symbol-defs-withfill.svg#icon-phone-black"></use>
         </svg>
-            </div>
-            <label for="modal-email" class="form-label">Mail</label>
-            <div class="modal-container">
-                <input type="email" class="form-input" name="modal-email" id="modal-email" />
-                <svg class="modal-form-svg">
+      </div>
+      <label for="modal-email" class="form-label">Mail</label>
+      <div class="modal-container">
+        <input
+          type="email"
+          class="form-input"
+          name="modal-email"
+          id="modal-email"
+        />
+        <svg class="modal-form-svg">
           <use href="./images/symbol-defs-withfill.svg#icon-email-black"></use>
         </svg>
-            </div>
-            <!-------- радіо кнопки -------->
-            <div class="radio-container">
-                <select id="size" name="size" class="radio__select">
+      </div>
+      <!-------- радіо кнопки -------->
+      <div class="radio-container">
+        <select id="size" name="size" class="radio__select">
           <option class="radio__option" value="a" selected>Coffee</option>
           <option class="radio__option" value="b">Americano</option>
           <option class="radio__option" value="c">Late</option>
           <option class="radio__option" value="d">Expresso</option>
         </select>
 
-                <div class="namber">
-                    <label class="namber__label">
+        <div class="namber">
+          <label class="namber__label">
             Number:
             <input
               class="namber__input"
@@ -52,24 +62,46 @@
               value="1"
             />
           </label>
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <button type="submit" class="button__order button__submit">Send</button>
-        </form>
-    </div>
+      <button type="submit" class="button__order button__submit">Send</button>
+    </form>
+  </div>
 </div>
 
 <!--------------- модалка 2 --------------->
 <div class="modal-two is-hidden-two">
-    <div class="modal-window-two">
-        <h2 class="modal-title">You have successfully placed your order</h2>
-        <button class="modal-button-two" aria-label="Закрыть">
+  <div class="modal-window-two">
+    <h2 class="modal-title">You have successfully placed your order</h2>
+    <button class="modal-button-two" aria-label="Закрыть">
       <svg class="modal-svg">
         <use
           href="./images/symbol-defs-withfill.svg#icon-close-black-18dp"
         ></use>
       </svg>
     </button>
-    </div>
+  </div>
+</div>
+<!-- модалка с картой -->
+<div class="backdrop modal-map backdrop-map is-hidden">
+  <div class="modal">
+    <iframe
+      class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317.9092025145725!2d30.64261137851221!3d50.39873807574019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5dab4456f61%3A0x88ac3ee90ee8a7fb!2z0JDQv9GC0LXQutCwINCo0LDRgEA!5e0!3m2!1suk!2sua!4v1664554797848!5m2!1suk!2sua"
+      width="450"
+      height="500"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <button data-modal-close class="btn-modal modal-close">
+      <svg class="btn-modal__icon" width="32px" height="32px">
+        <use
+          href="./images/symbol-defs-withfill.svg#icon-close-black-18dp"
+        ></use>
+      </svg>
+    </button>
+  </div>
 </div>
