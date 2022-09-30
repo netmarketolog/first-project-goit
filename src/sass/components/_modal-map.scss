@@ -1,0 +1,30 @@
+.modal-map {
+  display: flex;
+}
+.btn-modal {
+  display: flex;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid var(--primary-bg);
+  fill: var(--primary-bg);
+  background: transparent;
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: var(--section-title-color);
+    fill: var(--section-title-color);
+  }
+}
+.map {
+  border-radius: 4px;
+}
